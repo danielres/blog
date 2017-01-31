@@ -13,17 +13,27 @@ class Page extends React.Component {
           />
         </p>
 
-        <p>
-          Full-stack developer<br />
-          Freelancer<br />
-          Minimalist<br />
-          Nomad-ish<br />
-          NLP master practitioner<br />
-          IT Coach<br />
-          Berlin, Germany
+        <p
+          style={{ borderLeft: '3px solid #ddd', paddingLeft: 20}}
+        >
+          Daniel Reszka is a:<br />
+
+
+          <div
+          style={{ paddingLeft: 10, margin: '10px 0'}}
+          >
+            – full-stack developer<br />
+            – freelancer<br />
+            – minimalist<br />
+            – NLP master practitioner<br />
+            – IT Coach
+          </div>
+
+          living in Berlin, Germany
         </p>
 
-        <p>
+        <p
+        >
           <i
             class="glyphicon glyphicon-envelope"
             style={{
@@ -44,7 +54,9 @@ class Page extends React.Component {
           </a>
         </p>
 
-        <p>
+        <p
+          style={{ borderLeft: '3px solid #ddd', paddingLeft: 20}}
+        >
           <a href="https://www.github.com/danielres" target="_blank" rel="external">github.com/danielres</a><br />
           <a href="https://twitter.com/pixarea" target="_blank" rel="external">@pixarea</a><br />
           <a href="https://www.facebook.com/daniel.reszka.58" target="_blank" rel="external">Facebook</a><br />
