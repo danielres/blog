@@ -19,6 +19,7 @@ class MarkdownWrapper extends React.Component {
           title={`${post.title} | ${config.blogTitle}`}
         />
         <h1 style={{marginTop: 0}}>{post.title}</h1>
+        <h2 style={{marginTop: 0}}>{post.sub}</h2>
         <div dangerouslySetInnerHTML={{ __html: post.body }} />
         <em
           style={{
