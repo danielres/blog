@@ -14,13 +14,12 @@ class Page extends React.Component {
         </p>
 
         <p>
+          Full-stack developer<br />
           Freelancer<br />
           Minimalist<br />
-          Not completely nomad<br />
-          Front / Back end developer<br />
+          Nomad-ish<br />
           NLP master practitioner<br />
-          Agilist<br />
-          Coach<br />
+          IT Coach<br />
           Berlin, Germany
         </p>
 
@@ -56,7 +55,6 @@ class Page extends React.Component {
           VAT: DE 298 753 316
         </p>
 
-        <Footer />
       </div>
     )
   }
