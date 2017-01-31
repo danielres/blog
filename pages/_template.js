@@ -31,9 +31,21 @@ class Template extends React.Component {
         </h3>
 
         <Link
+          to={prefixLink('/dev/')}
+        >
+          Dev
+        </Link>
+        {' '}
+        <Link
           to={prefixLink('/gallery/')}
         >
           Gallery
+        </Link>
+        {' '}
+        <Link
+          to={prefixLink('/about/')}
+        >
+          About
         </Link>
       </div>
 
