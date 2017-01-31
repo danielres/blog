@@ -6,6 +6,14 @@ class Page extends React.Component {
     return (
       <div>
         <p>
+          <img
+            src="portrait.jpg"
+            width="240"
+            style={{borderRadius: '100%', padding: 0, float: 'right'}}
+          />
+        </p>
+
+        <p>
           Freelancer<br />
           Minimalist<br />
           Not completely nomad<br />
