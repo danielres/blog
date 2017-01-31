@@ -8,34 +8,14 @@ import { config } from 'config'
 class Template extends React.Component {
   render () {
     const { location, children } = this.props
-    let header
-    if (location.pathname === prefixLink('/')) {
-      header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={prefixLink('/')}
-          >
-            {config.blogTitle}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
+    const header =
+      <div>
         <h3
           style={{
             fontFamily: 'Montserrat, sans-serif',
             marginTop: 0,
+            marginRight: 20,
+            display: 'inline-block',
           }}
         >
           <Link
@@ -49,8 +29,14 @@ class Template extends React.Component {
             {config.blogTitle}
           </Link>
         </h3>
-      )
-    }
+
+        <Link
+          to={prefixLink('/gallery/')}
+        >
+          Gallery
+        </Link>
+      </div>
+
     return (
       <Container
         style={{
