@@ -52,7 +52,7 @@ const S = styled.span`
   margin-top: 20px;
   display: inline-block;
   text-align: center;
-  color: white;
+  color: #f6f6f6;
   background: #999;
   border-radius: 20%;
   padding: 5px 10px 8px;
@@ -63,6 +63,7 @@ const S = styled.span`
   transition-duration: 0.4s;
     &:hover {
       background: #5790C4;
+      color: white;
     }
   a {
     color: inherit;
