@@ -4,55 +4,66 @@ import { Container } from 'react-responsive-grid'
 import { prefixLink } from 'gatsby-helpers'
 import { rhythm, scale } from 'utils/typography'
 import { config } from 'config'
+import styled from 'styled-components';
+import IHome from 'react-icons/lib/ti/home'
+import ICode from 'react-icons/lib/io/code'
+import IPicture from 'react-icons/lib/io/android-color-palette'
+import IAbout from 'react-icons/lib/io/android-person'
+import './styles.scss'
+
+const I = styled.span`
+  font-size: 30px;
+  display: inline-block;
+  margin: 30px 20px 60px;
+  a {
+    color: #444;
+    box-shadow: none;
+  }
+`
 
 class Template extends React.Component {
   render () {
     const { location, children } = this.props
     const header =
       <div>
-        <h3
-          style={{
-            fontFamily: 'Montserrat, sans-serif',
-            marginTop: 0,
-            marginRight: 20,
-            display: 'inline-block',
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: 'none',
-              textDecoration: 'none',
-              color: 'inherit',
-            }}
-            to={prefixLink('/')}
-          >
-            {config.blogTitle}
-          </Link>
-        </h3>
+        <div style={{textAlign: 'center'}}>
+          <I>
+            <Link
+              title="Home (blog)"
+              to={prefixLink('/')}
+            >
+              <IHome />
+            </Link>
+          </I>
 
-        <Link
-          to={prefixLink('/')}
-        >
-          Blog
-        </Link>
-        {' '}
-        <Link
-          to={prefixLink('/dev/')}
-        >
-          Dev
-        </Link>
-        {' '}
-        <Link
-          to={prefixLink('/gallery/')}
-        >
-          Gallery
-        </Link>
-        {' '}
-        <Link
-          to={prefixLink('/about/')}
-        >
-          About
-        </Link>
+          <I>
+            <Link
+              title="Programming"
+              to={prefixLink('/dev/')}
+            >
+              <ICode />
+            </Link>
+          </I>
+
+          <I>
+            <Link
+              title="Art gallery"
+              to={prefixLink('/gallery/')}
+            >
+              <IPicture />
+            </Link>
+          </I>
+
+          <I>
+            <Link
+              title="About"
+              to={prefixLink('/about/')}
+            >
+              <IAbout />
+            </Link>
+          </I>
+        </div>
+
       </div>
 
     return (
