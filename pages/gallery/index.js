@@ -108,9 +108,15 @@ class Gallery extends React.Component {
         <br />
 
         <p className='text-center'>
-          <FaFlickr />
+          <FaFlickr style={{ fontSize: '130%', color: '#555', position: 'relative', top: -2}} />
           {' '}
-          <a href='https://www.flickr.com/photos/pixarea/albums' target='_blank'>More of my creations on Flickr</a>
+          <a
+            className='text-link'
+            href='https://www.flickr.com/photos/pixarea/albums'
+            target='_blank'
+          >
+            More of my creations on Flickr
+          </a>
         </p>
 
         <br />
