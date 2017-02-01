@@ -12,8 +12,7 @@ const entries = [
     name: 'React-redux-rails-oauth-boilerplate <br />',
     desc: `An open-source boilerplate for apps with decoupled frontend and backend
            using token authentication and Facebook as an auth provider. <br />
-           Allows faster development of apps based on this stack.<br />
-           Uses React, Redux, Redux sagas, Rails 5, Services,...`,
+           Allows faster development of apps based on this stack.<br />`,
     tags: ['React', 'Redux', 'Redux-sagas', 'Oauth', 'Rails', 'NodeJS', 'Rspec', 'TDD'],
     links: {
       github: 'danielres/react-redux-rails-oauth-boilerplate',
@@ -28,15 +27,6 @@ const entries = [
     }
   },
   {
-    name: 'Expresto',
-    desc: 'A collaborative and social platform to learn and share idiomatic expressions in many languages.',
-    tags: ['Rails', 'Rspec', 'TDD', 'I18n'],
-    pic: 'expresto.jpg',
-    links: {
-      github: 'danielres/expresto_BDD',
-    }
-  },
-  {
     name: 'Spirales',
     tags: ['Rails', 'RefineryCMS', 'Custom Events Engine', 'Paypal'],
     desc: 'Offical website for an association of psychotherapists.',
@@ -46,12 +36,25 @@ const entries = [
     }
   },
   {
+    name: 'Wymeditor',
+    pic: 'wymeditor.jpg',
+  },
+  {
     name: 'Nathalie Champougny',
     tags: ['Rails', 'RefineryCMS'],
     desc: 'Personal website of psychologist Nathalie Champougny.',
     pic: 'psynath.png',
     links: {
       pic: 'http://www.psynath.com/',
+    }
+  },
+  {
+    name: 'Expresto',
+    desc: 'A collaborative and social platform to learn and share idiomatic expressions in many languages.',
+    tags: ['Rails', 'Rspec', 'TDD', 'I18n'],
+    pic: 'expresto.jpg',
+    links: {
+      github: 'danielres/expresto_BDD',
     }
   },
   {
@@ -68,10 +71,6 @@ const entries = [
     desc: 'Offical website for the association.',
     tags: ['Rails', 'RefineryCMS'],
     pic: 'mlvf.png',
-  },
-  {
-    name: 'Wymeditor',
-    pic: 'wymeditor.jpg',
   },
   {
     name: 'Tempo',
@@ -115,7 +114,7 @@ class Gallery extends React.Component {
               <p>
                 <IGithub />
                 {' '}
-                <a href={`https://github.com/${e.links.github}`}>{e.links.github}</a>
+                <a className='text-link' href={`https://github.com/${e.links.github}`}>{e.links.github}</a>
               </p>
             }
 
