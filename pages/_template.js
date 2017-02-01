@@ -46,7 +46,7 @@ class Template extends React.Component {
         <div style={{textAlign: 'center'}}>
           <I>
             <Link
-              title="Home (blog)"
+              title="Articles"
               to={prefixLink('/')}
             >
               <IHome />
@@ -64,7 +64,7 @@ class Template extends React.Component {
 
           <I>
             <Link
-              title="Digital art"
+              title="Creations"
               to={prefixLink('/gallery/')}
             >
               <IPicture />
