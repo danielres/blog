@@ -101,7 +101,7 @@ class Gallery extends React.Component {
     return (
       <div>
         {entries.map((e) =>
-          <div style={entryStyle}>
+          <div style={entryStyle} key={e.name}>
             <h3 style={entryTitleStyle}>
               <span dangerouslySetInnerHTML={{ __html: e.name }} />
               {e.tags  && <small style={entryTagsStyle}>{e.tags.map((t) => <span style={entryTagStyle}>{t}</span>)}</small>}
