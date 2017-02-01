@@ -6,7 +6,7 @@ export default (props) =>
   <div
     style={{
       marginBottom: rhythm(2.5),
-      borderTop: '1px solid #ccc',
+      borderTop: '1px dashed #ccc',
       paddingTop: 30,
     }}
   >
