@@ -7,7 +7,7 @@ export default (props) =>
     style={{
       marginBottom: rhythm(2.5),
       borderTop: '1px solid #ccc',
-      paddingTop: 40,
+      paddingTop: 30,
     }}
   >
     <Bio />
