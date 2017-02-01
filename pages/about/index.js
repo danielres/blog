@@ -1,7 +1,8 @@
 import React from 'react'
+import styled from 'styled-components';
 import Footer from 'components/Footer'
-import Envelope from 'react-icons/lib/fa/envelope'
-import Check from 'react-icons/lib/fa/check'
+import _Envelope from 'react-icons/lib/fa/envelope'
+import _Check from 'react-icons/lib/fa/check'
 import FaGithub from 'react-icons/lib/fa/github'
 import FaFacebook from 'react-icons/lib/fa/facebook'
 import FaTwitter from 'react-icons/lib/fa/twitter'
@@ -9,66 +10,66 @@ import FaLinkedin from 'react-icons/lib/fa/linkedin'
 import FaFlickr from 'react-icons/lib/fa/flickr'
 import MdInfo from 'react-icons/lib/md/info'
 
-const I = (props) =>
-  <span
-    style={{color: '#666', fontSize: 24}}
-  >
-    {props.children}
-  </span>
+const I = styled.span`
+  color: #666;
+  font-size: 24px;
+`
 
+const C = styled(_Check)`
+  color: #595;
+  font-size: 15px;
+  margin-left: -20px;
+`
 
-const C = (props) =>
-  <span
-    style={{color: '#595', fontSize: 15}}
-  >
-    <Check />
-  </span>
+const Envelope = styled(_Envelope)`
+  margin-left: -22px;
+  margin-right: 15px;
+  color: white;
+  background: #999;
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 20%;
+`
 
+const Portrait = styled((p) => <img {...p} src='portrait.jpg' />)`
+  border-radius: 100%;
+  padding: 0;
+  float: right;
+  margin-top: 90px;
+`
 
+const BorderLeft = styled.div`
+  border-left: 3px solid #ddd;
+  padding-left: 20px;
+  margin-bottom:20px;
+`
 
 class Page extends React.Component {
   render () {
     return (
       <div>
-        <p>
-          <img
-            src="portrait.jpg"
-            width="240"
-            style={{borderRadius: '100%', padding: 0, float: 'right'}}
-          />
-        </p>
+        <Portrait />
 
-        <p
-          style={{ borderLeft: '3px solid #ddd', paddingLeft: 20}}
-        >
+        <BorderLeft>
           Daniel Reszka is a:<br />
-
-
           <div
-            style={{ paddingLeft: 10, margin: '10px 0'}}
+            style={{ paddingLeft: 40, margin: '10px 0'}}
           >
-            <C /> Full-stack developer<br />
+            <C /> Full-stack developer <small>(mainly: React / RoR)</small><br />
             <C /> Freelancer<br />
             <C /> Minimalist<br />
             <C /> NLP master practitioner<br />
-            <C /> IT Coach
+            <C /> Coach for IT teams and <br />project leaders
           </div>
 
           living in Berlin, Germany
-        </p>
+        </BorderLeft>
+
+
 
         <p>
-          <Envelope
-            style={{
-              marginLeft: -22,
-              marginRight: 15,
-              color: 'white',
-              background: '#999',
-              fontSize: 50,
-              padding: 10,
-              borderRadius: '20%'
-            }}
-          />
+          <Envelope />
+
           <a
             href="https://docs.google.com/forms/d/1BxhAu46f-qdPS-SDYsdF3RS1W1yKR2mkSKy0K7OXLoI/viewform"
             target="_blank"
