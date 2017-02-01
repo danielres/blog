@@ -1,23 +1,40 @@
 import React from 'react'
-import { Link } from 'react-router'
+import { Link as _Link } from 'react-router'
 import { Container } from 'react-responsive-grid'
 import { prefixLink } from 'gatsby-helpers'
 import { rhythm, scale } from 'utils/typography'
 import { config } from 'config'
 import styled from 'styled-components';
 import IHome from 'react-icons/lib/ti/home'
-import ICode from 'react-icons/lib/io/code'
+import _ICode from 'react-icons/lib/io/code'
 import IPicture from 'react-icons/lib/io/android-color-palette'
 import IAbout from 'react-icons/lib/io/android-person'
 import './styles.scss'
 
+
+const ICode = () =>
+  <_ICode style={{position: 'relative', left: 1.5}} />
+
+const Link = (props) =>
+  <_Link {...props} activeClassName='active' onlyActiveOnIndex={true}/>
+
 const I = styled.span`
   font-size: 30px;
   display: inline-block;
-  margin: 30px 20px 60px;
+  margin: 30px 10px 60px;
   a {
     color: #444;
     box-shadow: none;
+    background: transparent;
+    padding: 10px 11px;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    transition-duration: 0.2s;
+    &.active,
+    &:hover{
+      background: white;
+    }
   }
 `
 
