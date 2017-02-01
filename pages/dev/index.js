@@ -10,7 +10,10 @@ const IGithub = () =>
 const entries = [
   {
     name: 'React-redux-rails-oauth-boilerplate <br />',
-    desc: 'An open-source boilerplate with decoupled frontend/backend apps, featuring React, Redux, Redux sagas, Rails 5, Trailblazer... <br />Uses token authentication and Facebook as an auth provider.',
+    desc: `An open-source boilerplate for apps with decoupled frontend and backend
+           using token authentication and Facebook as an auth provider. <br />
+           Allows faster development of apps based on this stack.<br />
+           Uses React, Redux, Redux sagas, Rails 5, Services,...`,
     tags: ['React', 'Redux', 'Redux-sagas', 'Oauth', 'Rails', 'NodeJS', 'Rspec', 'TDD'],
     links: {
       github: 'danielres/react-redux-rails-oauth-boilerplate',
@@ -18,7 +21,7 @@ const entries = [
   },
   {
     name: 'Marketplace',
-    desc: 'A platform to improve internal communication, transparency and decision-making in companies following the principles of self-management.',
+    desc: 'A platform to improve efficiency and ease self-management in companies organized in a flat hierarchy (holacracy).',
     tags: ['Rails', 'Pure Ruby', 'AngularJS', 'Rspec', 'TDD'],
     links: {
       github: 'danielres/maketplace',
@@ -26,8 +29,8 @@ const entries = [
   },
   {
     name: 'Expresto',
-    desc: 'Collaborative platform to share and learn idiomatic expressions in various languages.',
-    tags: ['Rails', 'Rspec', 'TDD'],
+    desc: 'A collaborative and social platform to learn and share idiomatic expressions in many languages.',
+    tags: ['Rails', 'Rspec', 'TDD', 'I18n'],
     pic: 'expresto.jpg',
     links: {
       github: 'danielres/expresto_BDD',
