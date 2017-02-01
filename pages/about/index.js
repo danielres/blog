@@ -138,7 +138,7 @@ class Page extends React.Component {
         </S>
 
         <S>
-          <a title="flickr.com/photos/pixarea" href="https://www.flickr.com/photos/pixarea/" target="_blank" rel="external">
+          <a title="flickr.com/photos/pixarea" href="https://www.flickr.com/photos/pixarea/albums" target="_blank" rel="external">
             <FaFlickr />
           </a>
         </S>

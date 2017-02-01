@@ -1,5 +1,6 @@
 import React from 'react'
 import Footer from 'components/Footer'
+import FaFlickr from 'react-icons/lib/fa/flickr'
 
 class Gallery extends React.Component {
   render () {
@@ -18,7 +19,16 @@ class Gallery extends React.Component {
         <img src='texture-2.jpg' alt='Drawing: ' />
         <img src='texture-corn.jpg' alt='Drawing: ' />
 
-        <p><a href='https://www.flickr.com/photos/pixarea/' target='_blank'>More of my creations on Flickr</a></p>
+        <br />
+        <br />
+
+        <p className='text-center'>
+          <FaFlickr />
+          {' '}
+          <a href='https://www.flickr.com/photos/pixarea/albums' target='_blank'>More of my creations on Flickr</a>
+        </p>
+
+        <br />
 
         <Footer />
       </div>
