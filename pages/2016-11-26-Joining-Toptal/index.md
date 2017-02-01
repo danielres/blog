@@ -1,5 +1,6 @@
 ---
 title: Joining Toptal
+sub: Freelancing & remoting
 date: 2016-11-26 20:19:00
 path: "/2016/11/Joining-Toptal/"
 ---
