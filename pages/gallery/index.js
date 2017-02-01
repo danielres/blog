@@ -7,7 +7,7 @@ import styled from 'styled-components'
 const Img = (props) =>
   <img
     title={props.alt}
-    style={{borderRadius: 10}}
+    style={{borderRadius: 10, cursor: 'pointer'}}
     {...props}
   />
 
