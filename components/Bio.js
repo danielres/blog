@@ -7,7 +7,7 @@ import { prefixLink } from 'gatsby-helpers'
 class Bio extends React.Component {
   render () {
     return (
-      <p
+      <div
         style={{
           marginBottom: rhythm(2.5),
         }}
@@ -24,6 +24,7 @@ class Bio extends React.Component {
             width: rhythm(2),
             height: rhythm(2),
             borderRadius: '100%',
+            border: '2px solid #f6f6f6',
           }}
         />
         <div
@@ -31,9 +32,9 @@ class Bio extends React.Component {
         >
           Crafted by <strong>{config.authorName}</strong> who lives and works in Berlin building useful things.
           {' '}
-          <Link to='/about/'>You should follow him on social media</Link>.
+          <Link className='text-link' to='/about/'>You should follow him on social media</Link>.
         </div>
-      </p>
+      </div>
     )
   }
 }
