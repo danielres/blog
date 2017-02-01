@@ -64,7 +64,7 @@ class Template extends React.Component {
 
           <I>
             <Link
-              title="Art gallery"
+              title="Digital art"
               to={prefixLink('/gallery/')}
             >
               <IPicture />
