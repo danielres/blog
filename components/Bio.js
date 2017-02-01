@@ -26,9 +26,13 @@ class Bio extends React.Component {
             borderRadius: '100%',
           }}
         />
-        Crafted by <strong>{config.authorName}</strong> who lives and works in Berlin building useful things.
-        {' '}
-        <Link to='/about/'>You should follow him on social media</Link>
+        <div
+          style={{ marginLeft: 70}}
+        >
+          Crafted by <strong>{config.authorName}</strong> who lives and works in Berlin building useful things.
+          {' '}
+          <Link to='/about/'>You should follow him on social media</Link>.
+        </div>
       </p>
     )
   }
