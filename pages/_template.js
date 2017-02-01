@@ -8,12 +8,16 @@ import styled from 'styled-components';
 import IHome from 'react-icons/lib/ti/home'
 import _ICode from 'react-icons/lib/io/code'
 import IPicture from 'react-icons/lib/io/android-color-palette'
-import IAbout from 'react-icons/lib/io/android-person'
+// import IAbout from 'react-icons/lib/io/android-person'
+import _IAbout from './AboutIcon'
 import './styles.scss'
 
 
 const ICode = () =>
   <_ICode style={{position: 'relative', left: 1.5}} />
+
+const IAbout = () =>
+  <_IAbout style={{position: 'relative', left: 3, top: -4}} />
 
 const Link = (props) =>
   <_Link {...props} activeClassName='active' onlyActiveOnIndex={true}/>
