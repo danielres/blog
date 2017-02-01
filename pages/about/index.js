@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components'
 import Footer from 'components/Footer'
 import _Envelope from 'react-icons/lib/fa/envelope'
 import _Check from 'react-icons/lib/fa/check'
@@ -22,11 +22,10 @@ const C = styled(_Check)`
 `
 
 const Envelope = styled(_Envelope)`
-  margin-left: -22px;
-  margin-right: 15px;
-  color: white;
-  background: #999;
-  font-size: 50px;
+  margin-left: -29px;
+  margin-right: 7px;
+  color: #999;
+  font-size: 60px;
   padding: 10px;
   border-radius: 20%;
 `
@@ -35,7 +34,8 @@ const Portrait = styled((p) => <img {...p} src='portrait.jpg' />)`
   border-radius: 100%;
   padding: 0;
   float: right;
-  margin-top: 90px;
+  margin-top: 40px;
+  margin-right: -60px;
 `
 
 const BorderLeft = styled.div`
@@ -44,10 +44,34 @@ const BorderLeft = styled.div`
   margin-bottom:20px;
 `
 
+const S = styled.span`
+  position: relative;
+  left: -32px;
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  color: white;
+  background: #999;
+  border-radius: 20%;
+  padding: 5px 10px 8px;
+  line-height: 50px;
+  width: 70px;
+  margin-right: 15px;
+  font-size: 50px;
+  transition-duration: 0.4s;
+    &:hover {
+      background: #5790C4;
+    }
+  a {
+    color: inherit;
+    box-shadow: none;
+  }
+`
+
 class Page extends React.Component {
   render () {
     return (
-      <div>
+      <div style={{marginTop: 50}}>
         <Portrait />
 
         <BorderLeft>
@@ -55,17 +79,16 @@ class Page extends React.Component {
           <div
             style={{ paddingLeft: 40, margin: '10px 0'}}
           >
-            <C /> Full-stack developer <small>(mainly: React / RoR)</small><br />
+            <C /> Full-stack developer <small style={{color: 'gray'}}> (React / NodeJS / RoR)</small><br />
             <C /> Freelancer<br />
             <C /> Minimalist<br />
             <C /> NLP master practitioner<br />
             <C /> Coach for IT teams and <br />project leaders
           </div>
 
-          living in Berlin, Germany
+          <p>living in Berlin, Germany</p>
+
         </BorderLeft>
-
-
 
         <p>
           <Envelope />
@@ -74,23 +97,53 @@ class Page extends React.Component {
             href="https://docs.google.com/forms/d/1BxhAu46f-qdPS-SDYsdF3RS1W1yKR2mkSKy0K7OXLoI/viewform"
             target="_blank"
             rel="external"
+            style={{boxShadow: 'none', borderBottom: '1px solid'}}
           >
             Ask me anything
           </a>
         </p>
 
-        <p
-          style={{ borderLeft: '3px solid #ddd', paddingLeft: 20}}
-        >
-          <I><FaGithub />   </I> <a href="https://www.github.com/danielres" target="_blank" rel="external">github.com/danielres</a><br />
-          <I><FaTwitter />  </I> <a href="https://twitter.com/pixarea" target="_blank" rel="external">@pixarea</a><br />
-          <I><FaFacebook /> </I> <a href="https://www.facebook.com/daniel.reszka.58" target="_blank" rel="external">Facebook</a><br />
-          <I><FaLinkedin /> </I> <a href="https://be.linkedin.com/in/danielres" target="_blank" rel="external">LinkedIn</a><br />
-          <I><FaFlickr />   </I> <a href="https://www.flickr.com/photos/pixarea/" target="_blank" rel="external">Flickr</a><br />
-          <I><MdInfo />     </I> <a href="about.me/daniel.r">About.me</a><br />
-          +49 (0) 1575 160 1005<br />
+        <BorderLeft>
+          Phone: +49 (0) 1575 160 1005<br />
           VAT: DE 298 753 316
-        </p>
+        </BorderLeft>
+
+        <S>
+          <a title="github.com/danielres" href="https://www.github.com/danielres" target="_blank" rel="external">
+            <FaGithub />
+          </a>
+        </S>
+
+        <S>
+          <a title="twitter.com/pixarea" href="https://twitter.com/pixarea" target="_blank" rel="external">
+            <FaTwitter />
+          </a>
+        </S>
+
+        <S>
+          <a title="facebook.com/daniel.reszka.58" href="https://www.facebook.com/daniel.reszka.58" target="_blank" rel="external">
+            <FaFacebook />
+          </a>
+        </S>
+
+        <S>
+          <a title="linkedin.com/in/danielres" href="https://be.linkedin.com/in/danielres" target="_blank" rel="external">
+            <FaLinkedin />
+          </a>
+        </S>
+
+        <S>
+          <a title="flickr.com/photos/pixarea" href="https://www.flickr.com/photos/pixarea/" target="_blank" rel="external">
+            <FaFlickr />
+          </a>
+        </S>
+
+        <S>
+          <a title="about.me/daniel.r" href="https://about.me/daniel.r" target="_blank" rel="external">
+            <MdInfo />
+          </a>
+        </S>
+
 
       </div>
     )
