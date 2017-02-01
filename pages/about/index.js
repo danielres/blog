@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router'
+import { prefixLink } from 'gatsby-helpers'
 import styled from 'styled-components'
 import Footer from 'components/Footer'
 import _Envelope from 'react-icons/lib/fa/envelope'
@@ -64,7 +66,10 @@ const S = styled.span`
     }
   a {
     color: inherit;
-    box-shadow: none;
+    border-bottom: none;
+    &:hover {
+      border-bottom: none;
+    }
   }
 `
 
@@ -79,7 +84,8 @@ class Page extends React.Component {
           <div
             style={{ paddingLeft: 40, margin: '10px 0'}}
           >
-            <C /> Full-stack developer <small style={{color: 'gray'}}> (React / NodeJS / RoR)</small><br />
+            <C /> <Link to={prefixLink('/dev/')}>Full-stack developer</Link> <small style={{color: 'gray'}}> (React / NodeJS / RoR)</small><br />
+            <C /> <Link to={prefixLink('/gallery/')}>Digital artist</Link> <br />
             <C /> Freelancer<br />
             <C /> Minimalist<br />
             <C /> NLP master practitioner<br />
@@ -97,7 +103,6 @@ class Page extends React.Component {
             href="https://docs.google.com/forms/d/1BxhAu46f-qdPS-SDYsdF3RS1W1yKR2mkSKy0K7OXLoI/viewform"
             target="_blank"
             rel="external"
-            style={{boxShadow: 'none', borderBottom: '1px solid'}}
           >
             Ask me anything
           </a>
