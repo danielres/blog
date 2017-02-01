@@ -48,7 +48,7 @@ const BorderLeft = styled.div`
 
 const S = styled.span`
   position: relative;
-  left: -32px;
+  left: -29px;
   margin-top: 20px;
   display: inline-block;
   text-align: center;
@@ -56,10 +56,10 @@ const S = styled.span`
   background: #999;
   border-radius: 20%;
   padding: 5px 10px 8px;
-  line-height: 50px;
-  width: 70px;
+  line-height: 45px;
+  width: 60px;
   margin-right: 15px;
-  font-size: 50px;
+  font-size: 40px;
   transition-duration: 0.4s;
     &:hover {
       background: #5790C4;
