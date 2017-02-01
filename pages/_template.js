@@ -21,7 +21,7 @@ const Link = (props) =>
 const I = styled.span`
   font-size: 30px;
   display: inline-block;
-  margin: 30px 10px 60px;
+  margin: 30px 10px 30px;
   a {
     color: #444;
     box-shadow: none;

@@ -130,7 +130,7 @@ class Gallery extends React.Component {
             }
           </div>
         )}
-
+        <br />
         <Footer />
       </div>
     )
