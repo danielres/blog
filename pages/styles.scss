@@ -1,0 +1,12 @@
+a {
+  box-shadow: none;
+}
+
+.main a {
+  border-bottom: 1px solid #ABDDFE;
+  transition-duration: 0.2s;
+  &:hover {
+    border-bottom: 1px solid ;
+  }
+}
+
