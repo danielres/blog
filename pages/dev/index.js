@@ -1,5 +1,11 @@
 import React from 'react'
 import Footer from 'components/Footer'
+import _IGithub from 'react-icons/lib/fa/github'
+
+const IGithub = () =>
+  <span style={{fontSize: '170%', color: 'gray'}}>
+    <_IGithub />
+  </span>
 
 const entries = [
   {
@@ -82,8 +88,8 @@ const entries = [
   },
 ]
 
-const entryStyle = { borderTop: '1px solid #ccc', paddingBottom: 30}
-const entryTitleStyle = { fontWeight: 'normal'}
+const entryStyle = { padding: '20px 20px 1px', background: 'white', marginBottom: 20, borderRadius: 10}
+const entryTitleStyle = { fontWeight: 'normal', marginTop: 0}
 const entryTagsStyle = { textTransform: 'uppercase'}
 const entryTagStyle = { marginLeft: '1.5em', fontSize: '80%', color: 'gray'}
 
@@ -103,7 +109,11 @@ class Gallery extends React.Component {
             }
 
             {e.links && e.links.github &&
-              <p><a href={`https://github.com/${e.links.github}`}>{e.links.github}</a></p>
+              <p>
+                <IGithub />
+                {' '}
+                <a href={`https://github.com/${e.links.github}`}>{e.links.github}</a>
+              </p>
             }
 
             {e.links && e.links.pic
