@@ -38,6 +38,7 @@ const Portrait = styled((p) => <img {...p} src='portrait.jpg' />)`
   float: right;
   margin-top: 40px;
   margin-right: -60px;
+  border: 2px solid white;
 `
 
 const BorderLeft = styled.div`
@@ -77,7 +78,7 @@ const S = styled.span`
 class Page extends React.Component {
   render () {
     return (
-      <div style={{marginTop: 50}}>
+      <div style={{marginTop: 20}}>
         <Portrait />
 
         <BorderLeft>
