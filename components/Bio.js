@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 import { config } from 'config'
 import { rhythm } from 'utils/typography'
 import { prefixLink } from 'gatsby-helpers'
@@ -24,7 +25,9 @@ class Bio extends React.Component {
             height: rhythm(2),
           }}
         />
-        Crafted by <strong>{config.authorName}</strong> who lives and works in Berlin building useful things. <a href="https://twitter.com/pixarea">You should follow him on Twitter</a>
+        Crafted by <strong>{config.authorName}</strong> who lives and works in Berlin building useful things.
+        {' '}
+        <Link to='/about/'>You should follow him on social media</Link>
       </p>
     )
   }
