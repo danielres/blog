@@ -21,6 +21,7 @@
     "recursive-readdir": "^2.1.0",
     "rimraf": "^2.5.4",
     "safe-access": "^0.1.0",
+    "styled-components": "^1.4.2",
     "sync-request": "^3.0.1",
     "typography": "^0.14.0",
     "typography-theme-wordpress-2016": "^0.14.0",
