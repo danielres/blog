@@ -3,6 +3,7 @@ import Footer from 'components/Footer'
 import FaFlickr from 'react-icons/lib/fa/flickr'
 import Lightbox from 'react-images'
 import styled from 'styled-components'
+import PageTitle from 'components/PageTitle'
 
 const Img = (props) =>
   <img
@@ -83,6 +84,8 @@ class Gallery extends React.Component {
 
     return (
       <div>
+        <PageTitle>Creations</PageTitle>
+
         <Lightbox
           images={images}
           isOpen={this.state.lightbox.isOpen}

@@ -1,6 +1,7 @@
 import React from 'react'
 import Footer from 'components/Footer'
 import _IGithub from 'react-icons/lib/fa/github'
+import PageTitle from 'components/PageTitle'
 
 const IGithub = () =>
   <span style={{fontSize: '170%', color: 'gray'}}>
@@ -99,6 +100,8 @@ class Gallery extends React.Component {
   render () {
     return (
       <div>
+        <PageTitle>Programming</PageTitle>
+
         {entries.map((e) =>
           <div style={entryStyle} key={e.name}>
             <h3 style={entryTitleStyle}>

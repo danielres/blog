@@ -10,6 +10,7 @@ import styled from 'styled-components'
 import { config } from 'config'
 import include from 'underscore.string/include'
 import Footer from 'components/Footer'
+import PageTitle from 'components/PageTitle'
 
 const _Entry = (props) =>
   <div className={props.className}>
@@ -87,6 +88,8 @@ class BlogIndex extends React.Component {
             {"name": "keywords", "content": "blog, articles"},
           ]}
         />
+
+        <PageTitle>Articles</PageTitle>
 
         <div style={{marginBottom: 40}}>
           {entries}

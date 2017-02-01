@@ -11,6 +11,8 @@ import FaTwitter from 'react-icons/lib/fa/twitter'
 import FaLinkedin from 'react-icons/lib/fa/linkedin'
 import FaFlickr from 'react-icons/lib/fa/flickr'
 import MdInfo from 'react-icons/lib/md/info'
+import PageTitle from 'components/PageTitle'
+
 
 const I = styled.span`
   color: #666;
@@ -78,7 +80,9 @@ const S = styled.span`
 class Page extends React.Component {
   render () {
     return (
-      <div style={{marginTop: 20}}>
+      <div>
+        <PageTitle>About</PageTitle>
+
         <Portrait />
 
         <BorderLeft>
