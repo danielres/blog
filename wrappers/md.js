@@ -1,13 +1,40 @@
 import React from 'react'
 import moment from 'moment'
 import Helmet from "react-helmet"
+import styled from 'styled-components'
 import ReadNext from '../components/ReadNext'
 import { rhythm } from 'utils/typography'
 import { config } from 'config'
 import Footer from 'components/Footer'
+import PageTitle from 'components/PageTitle'
 
 import '../css/zenburn.css'
 
+const Content = styled(
+  (props) =>
+    <div
+      className={props.className}
+      dangerouslySetInnerHTML={{ __html: props.body }}
+    />
+  )`
+    img {
+      border-radius: 10px;
+    }
+  `
+
+const PostTitle = styled(
+  (props) =>
+    <h3 className={props.className}>
+      {props.title}
+      <div>
+        <small className='mute'>{props.sub}</small>
+      </div>
+    </h3>
+  )`
+    font-weight: 100;
+    margin: 40px 0;
+    text-align: center;
+  `
 class MarkdownWrapper extends React.Component {
   render () {
     const { route } = this.props
@@ -18,13 +45,16 @@ class MarkdownWrapper extends React.Component {
         <Helmet
           title={`${post.title} | ${config.blogTitle}`}
         />
-        <h1 style={{marginTop: 0}}>{post.title}</h1>
-        <h2 style={{marginTop: 0}}>{post.sub}</h2>
-        <div dangerouslySetInnerHTML={{ __html: post.body }} />
+        <PageTitle>Articles</PageTitle>
+        <PostTitle title={post.title} sub={post.sub} />
+
+        <Content body={post.body} />
+
         <em
+          className='mute'
           style={{
             display: 'block',
-            marginBottom: rhythm(2),
+            marginBottom: rhythm(1.5),
           }}
         >
           Posted {moment(post.date).format('MMMM D, YYYY')}
