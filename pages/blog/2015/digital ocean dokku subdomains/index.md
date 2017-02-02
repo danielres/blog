@@ -3,7 +3,7 @@ title: Multiple apps on 1 dokku droplet
 path: /2015/08/Digital-Ocean-Dokku-subdomains/
 sub: With subdomains, on Digital Ocean
 date: 2015-08-20 17:20:55
-preview: preview.png
+<!-- preview: preview.png -->
 categories:
 - programming
 - hosting
