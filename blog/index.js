@@ -12,9 +12,15 @@ import include from 'underscore.string/include'
 import Footer from 'components/Footer'
 import PageTitle from 'components/PageTitle'
 
+const LinkIf = (props) =>
+  props.if
+  ? <Link to={props.to}>{props.children}</Link>
+  : <span>{props.children}</span>
+
 const _Entry = (props) =>
   <div className={props.className}>
-    <Link
+    <LinkIf
+      if={!props.page.data.noLink}
       to={prefixLink(props.page.path)}
     >
       <div>
@@ -25,12 +31,24 @@ const _Entry = (props) =>
       <h3>{props.title}</h3>
       <div className='sep' />
       {<div className='sub'><small>{props.sub || ' . '}</small></div>}
-      {props.preview && <div className='preview'><img width={320} style={{borderRadius: 7, border: '1px solid #ccc', margin: '10px 0 0'}} src={prefixLink(props.page.path) + props.preview} alt='' /></div>}
-    </Link>
+      {props.preview &&
+        <div
+          className='preview'
+        >
+          <img
+            width={320}
+            style={{borderRadius: 7, border: '1px solid #ccc', margin: '10px 0 0'}}
+            src={prefixLink(props.page.path) + props.preview}
+            alt='Article preview'
+          />
+        </div>
+      }
+      {console.log(props.page.data.body)}
+      {props.page.data.noLink && <div dangerouslySetInnerHTML={{ __html: props.page.data.body }} />}
+    </LinkIf>
   </div>
 
 const Entry = styled(_Entry)`
-  cursor: pointer;
   margin: 0 0 3px;
   padding: 30px;
   ${props => props.isFirst && 'border-radius: 10px 10px 0 0;' }
@@ -47,17 +65,18 @@ const Entry = styled(_Entry)`
   a {
     // color: #666;
   }
-  .sep {
+  a .sep {
     width: 20%;
     transition-duration: 0.5s;
     margin: auto;
     background: transparent;
     height: 1px;
   }
-  &:hover .sep {
+  &:hover a .sep {
     transition-duration: 0.4s;
     width: 60%;
     background: #aaa;
+
   }
   h3 {
     font-weight: 100;
