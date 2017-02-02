@@ -42,6 +42,7 @@ const Portrait = styled((p) => <img width={200} height={200} {...p} src='portrai
   margin-right: 0px;
   border: 2px solid #6DB4F5;
   background: #6DB4F5;
+  transform: rotate(9deg);
 `
 
 const BorderLeft = styled.div`
