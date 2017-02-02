@@ -45,7 +45,7 @@ class MarkdownWrapper extends React.Component {
         <Helmet
           title={`${post.title} | ${config.blogTitle}`}
         />
-        <PageTitle>Articles</PageTitle>
+        <PageTitle link='/'>Articles</PageTitle>
         <PostTitle title={post.title} sub={post.sub} />
 
         <Content body={post.body} />

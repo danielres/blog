@@ -1,6 +1,8 @@
 import React from 'react'
+import { Link } from 'react-router'
 import styled from 'styled-components'
 import _O from './Ornament'
+import IBack from 'react-icons/lib/fa/hand-o-left'
 
 const O = () =>
   <_O width={71} height={20} style={{marginRight: 0}} color='#aaa'  />
@@ -15,6 +17,26 @@ const HMirror = styled.span`
   filter: FlipH;
   -ms-filter: "FlipH";
 `
+const Back = styled.div`
+  width: 200px;
+  margin-left: -100px;
+  margin-top: -42px;
+  height: 70px;
+  position: absolute;
+  left: 50%;
+  .icon{
+    transition-duration: 0.2s;
+    color: #666;
+    margin-left: 10px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+  }
+  &:hover .icon {
+    opacity: 1;
+    margin-left: -15px;
+  }
+`
 
 const Title = (props) =>
   <div>
@@ -23,8 +45,12 @@ const Title = (props) =>
       <O />
       {props.children}
       <HMirror><O /></HMirror>
+      { props.link &&
+        <Link to={props.link}>
+          <Back><IBack className='icon' /></Back>
+        </Link>
+      }
     </h3>
-
   </div>
 
 
