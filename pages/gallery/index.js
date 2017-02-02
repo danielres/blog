@@ -8,7 +8,7 @@ import PageTitle from 'components/PageTitle'
 const Img = (props) =>
   <img
     title={props.alt}
-    style={{borderRadius: 10, cursor: 'pointer'}}
+    style={{borderRadius: 10, cursor: 'pointer', marginBottom: 20, display: 'block'}}
     {...props}
   />
 
