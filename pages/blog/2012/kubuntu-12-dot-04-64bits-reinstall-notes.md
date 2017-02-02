@@ -98,7 +98,11 @@ In a terminal (konsole):
     rvm requirements # read the requirements !!
 
     # folowing the ínfos in "rvm requirements":
-    sudo apt-get install build-essential openssl libreadline6 libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev autoconf libc6-dev ncurses-dev automake libtool bison subversion
+    sudo apt-get install build-essential openssl libreadline6 \
+    libreadline6-dev curl git-core zlib1g zlib1g-dev libssl-dev \
+    libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt-dev \
+    autoconf libc6-dev ncurses-dev automake libtool bison subversion
+    
     rvm install 1.9.3
     
     # wait a few minutes while rvm compiles ruby
