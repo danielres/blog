@@ -25,6 +25,7 @@ const _Entry = (props) =>
       <h3>{props.title}</h3>
       <div className='sep' />
       {<div className='sub'><small>{props.sub || ' . '}</small></div>}
+      {props.preview && <div className='preview'><img width={320} style={{borderRadius: 7, border: '1px solid #ccc', margin: '10px 0 0'}} src={prefixLink(props.page.path) + props.preview} alt='' /></div>}
     </Link>
   </div>
 
@@ -75,9 +76,10 @@ class BlogIndex extends React.Component {
     const entries = posts.map((page, idx) => {
       const title = access(page, 'data.title') || page.path
       const sub = access(page, 'data.sub') || ''
+      const preview = access(page, 'data.preview')
       const isFirst = idx === 0 ? true : false
       const isLast = idx === posts.length - 1 ? true : false
-      return <Entry title={title} sub={sub} page={page} isFirst={isFirst} isLast={isLast} />
+      return <Entry title={title} sub={sub} page={page} isFirst={isFirst} isLast={isLast} preview={preview}/>
     })
     return (
       <div>
