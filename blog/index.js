@@ -56,7 +56,7 @@ const Entry = styled(_Entry)`
   &:hover .sep {
     transition-duration: 0.4s;
     width: 60%;
-    background: #333;
+    background: #aaa;
   }
   h3 {
     font-weight: 100;
