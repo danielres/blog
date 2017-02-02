@@ -13,7 +13,7 @@ import '../css/zenburn.css'
 const Content = styled(
   (props) =>
     <div
-      className={props.className}
+      className={`${props.className} textual-content`}
       dangerouslySetInnerHTML={{ __html: props.body }}
     />
   )`
