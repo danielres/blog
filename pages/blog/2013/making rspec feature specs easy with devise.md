@@ -1,7 +1,8 @@
 ---
-title: Faster feature specs with authentication
-sub: More efficient specs to write and execute
 date: 2013-01-16 12:22
+title: Faster feature specs with authentication
+sub: Make specs more efficient to write and execute
+path: /2013/01/making-rspec-feature-specs-easy-with-devise/
 comments: true
 categories:
 - programming
