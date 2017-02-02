@@ -37,7 +37,7 @@ const _Entry = (props) =>
         >
           <img
             width={320}
-            style={{borderRadius: 7, border: '1px solid #ccc', margin: '10px 0 0'}}
+            style={{borderRadius: 7, border: '2px solid #ddd', margin: '10px 0 0'}}
             src={prefixLink(props.page.path) + props.preview}
             alt='Article preview'
           />
