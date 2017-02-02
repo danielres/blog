@@ -34,13 +34,14 @@ const Envelope = styled(_Envelope)`
   border-radius: 20%;
 `
 
-const Portrait = styled((p) => <img {...p} src='portrait.jpg' />)`
+const Portrait = styled((p) => <img width={200} height={200} {...p} src='portrait.jpg' />)`
   border-radius: 100%;
   padding: 0;
   float: right;
   margin-top: 40px;
-  margin-right: -60px;
-  border: 2px solid white;
+  margin-right: 0px;
+  border: 2px solid #6DB4F5;
+  background: #6DB4F5;
 `
 
 const BorderLeft = styled.div`
