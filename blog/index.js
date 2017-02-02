@@ -60,16 +60,17 @@ const Entry = styled(_Entry)`
     background: white;
   }
   a .sep {
-    width: 20%;
+    width: 0%;
     transition-duration: 0.5s;
     margin: auto;
-    background: transparent;
-    height: 1px;
+    opacity: 0.5;
+    // http://www.colorzilla.com/gradient-editor/#aaaaaa+0,aaaaaa+50,aaaaaa+100&0+0,1+25,1+50,1+75,0+100
+    background: -webkit-linear-gradient(left, rgba(170,170,170,0) 0%,rgba(170,170,170,1) 25%,rgba(170,170,170,1) 50%,rgba(170,170,170,1) 75%,rgba(170,170,170,0) 100%);    height: 1px;
   }
   &:hover a .sep {
     transition-duration: 0.4s;
-    width: 60%;
-    background: #aaa;
+    opacity: 1;
+    width: 90%;
   }
   h3 {
     font-weight: 100;
