@@ -72,7 +72,7 @@ class BlogIndex extends React.Component {
     const sortedPages = sortBy(this.props.route.pages, (page) =>
       access(page, 'data.date')
     ).reverse()
-    const posts = sortedPages.filter((page) => access(page, 'file.ext') === 'md' && !include(page.path, '/404'))
+    const posts = sortedPages.filter((page) => access(page, 'file.ext') === 'md' && !include(page.path, '/404') && !include(page.path, '_drafts'))
     const entries = posts.map((page, idx) => {
       const title = access(page, 'data.title') || page.path
       const sub = access(page, 'data.sub') || ''
