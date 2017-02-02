@@ -14,7 +14,10 @@ You just need to come with something you want to work on, your tools, and your b
 
 <br />
 
+<div class='text-center'>
+    
 ![Social Pomodoro Berlin group picture](./social-pomodoro-berlin-3.jpg)
 ![Social Pomodoro Berlin group picture](./social-pomodoro-berlin-2.jpg)
 ![Social Pomodoro Berlin group picture](./social-pomodoro-berlin-1.jpg)
 
+</div>
