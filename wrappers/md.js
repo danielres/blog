@@ -26,9 +26,11 @@ const PostTitle = styled(
   (props) =>
     <h3 className={props.className}>
       {props.title}
-      <div>
-        <small className='mute'>{props.sub}</small>
-      </div>
+      {props.sub &&
+        <div style={{borderTop: '1px solid #aaa', width: '60%', margin: 'auto'}}>
+          <small className='mute'>{props.sub}</small>
+        </div>
+      }
     </h3>
   )`
     font-weight: 100;
