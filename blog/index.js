@@ -54,16 +54,10 @@ const Entry = styled(_Entry)`
   ${props => props.isFirst && 'border-radius: 10px 10px 0 0;' }
   ${props => props.isLast  && 'border-radius: 0 0  10px 10px;' }
   text-align: center;
-  background: transparent;
-  background: white;
   background: #f8f8f8;
   transition-duration: 0.4s;
   &:hover {
-    background: transparent;
     background: white;
-  }
-  a {
-    // color: #666;
   }
   a .sep {
     width: 20%;
@@ -76,13 +70,14 @@ const Entry = styled(_Entry)`
     transition-duration: 0.4s;
     width: 60%;
     background: #aaa;
-
   }
   h3 {
     font-weight: 100;
     margin: 0;
   }
-  .sub {color: gray}
+  .sub {
+    color: gray
+  }
 `
 
 class BlogIndex extends React.Component {
