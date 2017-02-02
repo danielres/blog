@@ -18,8 +18,11 @@ Cette image est sous license Creative Commons [CC BY-NC-SA 2.0.](http://creative
 
 (Cliquez sur l'image pour la télécharger en haute résolution)
 
-[
-![Mindmap: Métaprogrammes PNL](http://lh6.ggpht.com/_KVaEAkr2A6g/TThigF6Bv7I/AAAAAAAABKw/6d1mB4yqm5c/s720/metaprogrammes%20mindmap%2003_02.png)
-](http://lh6.ggpht.com/_KVaEAkr2A6g/TThigF6Bv7I/AAAAAAAABKw/6d1mB4yqm5c/d/metaprogrammes%20mindmap%2003_02.png)
+<a href="http://lh6.ggpht.com/_KVaEAkr2A6g/TThigF6Bv7I/AAAAAAAABKw/6d1mB4yqm5c/d/metaprogrammes%20mindmap%2003_02.png">
+
+  ![Mindmap: Métaprogrammes PNL](http://lh6.ggpht.com/_KVaEAkr2A6g/TThigF6Bv7I/AAAAAAAABKw/6d1mB4yqm5c/s720/metaprogrammes%20mindmap%2003_02.png)
+
+</a>
+
 
 
