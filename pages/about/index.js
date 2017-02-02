@@ -92,8 +92,8 @@ class Page extends React.Component {
           <div
             style={{ paddingLeft: 40, margin: '10px 0'}}
           >
-            <C /> <Link to={prefixLink('/dev/')}>Full-stack developer</Link> <small style={{color: 'gray'}}> (React / NodeJS / RoR)</small><br />
-            <C /> <Link to={prefixLink('/gallery/')}>Digital artist</Link> <br />
+            <C /> <Link className='text-link' to={prefixLink('/dev/')}>Full-stack developer</Link> <small style={{color: 'gray'}}> (React / NodeJS / RoR)</small><br />
+            <C /> <Link className='text-link' to={prefixLink('/gallery/')}>Digital artist</Link> <br />
             <C /> Freelancer<br />
             <C /> Minimalist<br />
             <C /> NLP master practitioner<br />
@@ -111,6 +111,7 @@ class Page extends React.Component {
             href="https://docs.google.com/forms/d/1BxhAu46f-qdPS-SDYsdF3RS1W1yKR2mkSKy0K7OXLoI/viewform"
             target="_blank"
             rel="external"
+            className="text-link"
           >
             Ask me anything
           </a>
