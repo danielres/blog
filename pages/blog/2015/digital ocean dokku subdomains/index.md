@@ -17,19 +17,19 @@ So here is a step-by step guide guide explaining how to host multiple apps on on
 
 With this setup, we'ĺl be able to deploy each app with a simple `git push` like this:
 
-    git push dokku master
+    $ git push dokku master
 
 And browse to our apps using subdomains, like:
 
-  * App 1: http://app1.pixarea.com
-  * App 2: http://app2.pixarea.com
-  * ...
+* App 1: http://app1.pixarea.com
+* App 2: http://app2.pixarea.com
+* ...
 
 All of this using only 1 droplet on Digital Ocean.
 
 Before we begin:
 
-  - be sure to have a registered domain name that you can add subdomains to.
+- be sure to have a registered domain name that you can add subdomains to.
 
 
 ## 1. Setting up the dokku droplet on Digital Ocean
