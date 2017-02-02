@@ -38,63 +38,65 @@ This means you already should have authentication well tested, with its complete
 
 #### A barebones example
 
-<!-- {% codeblock file:spec/features/admin_users_datatable.rb lang:ruby %} -->
+<!-- {% codeblock file: %} -->
 
-    require 'spec_helper'
+``` ruby 
+# file: spec/features/admin_users_datatable.rb 
 
-    # including some warden magic:
-    include Warden::Test::Helpers             
-    
-    # telling warden we are testing stuff:
-    Warden.test_mode!                         
+require 'spec_helper'
 
-    feature "(...)" do
-      context "(...)" do
-        before(:each) do
-          admin = FactoryGirl.create(:admin)
+# including some warden magic:
+include Warden::Test::Helpers             
 
-          # our instant magic authentication:
-          login_as(admin , :scope => :user)   
-        end
+# telling warden we are testing stuff:
+Warden.test_mode!                         
 
-        scenario "(...)", js: true do
-          visit admin_users_path
-          # (...)
-        end
-      end
+feature "(...)" do
+  context "(...)" do
+    before(:each) do
+      admin = FactoryGirl.create(:admin)
+
+      # our instant magic authentication:
+      login_as(admin , :scope => :user)   
     end
 
-<!-- {% endcodeblock %} -->
+    scenario "(...)", js: true do
+      visit admin_users_path
+      # (...)
+    end
+  end
+end
+```
 
 #### A working example, with some more flesh around bones
 
-<!-- {% codeblock file:spec/features/admin_users_datatable.rb lang:ruby %} -->
+```ruby
+# file: spec/features/admin_users_datatable.rb
 
-    require 'spec_helper'
-    include Warden::Test::Helpers
-    Warden.test_mode!
-    
-    feature "admin searching for a specific user" do
-      context "when logged in as admin" do
-        before(:each) do
-          admin = FactoryGirl.create(:admin)
-          login_as(admin , :scope => :user)
-          user1 = FactoryGirl.create(:user, email: 'foo@foo.com')
-          user2 = FactoryGirl.create(:user, email: 'bar@bar.com')
-        end
-    
-        scenario "admin searches for a specific user", js: true do
-          visit manage_users_path
-          page.body.should     have_content 'foo@foo.com'
-          page.body.should     have_content 'bar@bar.com'
-          fill_in 'Search', with: 'foo'
-          page.body.should     have_content 'foo@foo.com'
-          page.body.should_not have_content 'bar@bar.com'
-        end
-      end
+require 'spec_helper'
+include Warden::Test::Helpers
+Warden.test_mode!
+
+feature "admin searching for a specific user" do
+  context "when logged in as admin" do
+    before(:each) do
+      admin = FactoryGirl.create(:admin)
+      login_as(admin , :scope => :user)
+      user1 = FactoryGirl.create(:user, email: 'foo@foo.com')
+      user2 = FactoryGirl.create(:user, email: 'bar@bar.com')
     end
 
-<!-- {% endcodeblock %} -->
+    scenario "admin searches for a specific user", js: true do
+      visit manage_users_path
+      page.body.should     have_content 'foo@foo.com'
+      page.body.should     have_content 'bar@bar.com'
+      fill_in 'Search', with: 'foo'
+      page.body.should     have_content 'foo@foo.com'
+      page.body.should_not have_content 'bar@bar.com'
+    end
+  end
+end
+```
 
 #### More info
 
