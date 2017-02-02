@@ -79,7 +79,15 @@ class BlogIndex extends React.Component {
       const preview = access(page, 'data.preview')
       const isFirst = idx === 0 ? true : false
       const isLast = idx === posts.length - 1 ? true : false
-      return <Entry title={title} sub={sub} page={page} isFirst={isFirst} isLast={isLast} preview={preview}/>
+      return <Entry
+        key={title}
+        title={title}
+        sub={sub}
+        page={page}
+        isFirst={isFirst}
+        isLast={isLast}
+        preview={preview}
+      />
     })
     return (
       <div>
