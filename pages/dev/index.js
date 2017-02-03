@@ -81,17 +81,17 @@ const entries = [
       github: 'danielres/tempo',
     }
   },
-  {
-    name: 'Pixarea Blog',
-    pic: 'pixarea-blog.jpg',
-  },
-  {
-    name: 'Pixarea',
-    pic: 'pixarea.jpg',
-  },
+  // {
+  //   name: 'Pixarea Blog',
+  //   pic: 'pixarea-blog.jpg',
+  // },
+  // {
+  //   name: 'Pixarea',
+  //   pic: 'pixarea.jpg',
+  // },
 ]
 
-const entryStyle = { padding: '20px 20px 1px', background: 'white', marginBottom: 20, borderRadius: 10}
+const entryStyle = { padding: '20px 20px 1px', background: 'white', marginBottom: 20, borderRadius: 10, overflow: 'hidden'}
 const entryTitleStyle = { fontWeight: 'normal', marginTop: 0}
 const entryTagsStyle = { textTransform: 'uppercase'}
 const entryTagStyle = { marginLeft: '1.5em', fontSize: '80%', color: 'gray'}
@@ -109,6 +109,16 @@ class Gallery extends React.Component {
               {e.tags  && <small style={entryTagsStyle}>{e.tags.map((t) => <span style={entryTagStyle}>{t}</span>)}</small>}
             </h3>
 
+            <div style={{float: 'left', marginRight: 40, width: 'calc(50% - 20px)'}}>
+              {e.links && e.links.pic
+                ? <a href={e.links.pic} tilte='Visit website' target='_blank'>
+                    <img src={e.pic} alt={e.name} title={`Project: ${e.name}`} style={{borderRadius: 5}} />
+                  </a>
+                : e.pic &&
+                  <img src={e.pic} alt={e.name} title={`Project: ${e.name}`} style={{borderRadius: 5}} />
+              }
+            </div>
+            <div></div>
             {e.desc &&
               <p dangerouslySetInnerHTML={{ __html: e.desc }} />
             }
@@ -121,13 +131,6 @@ class Gallery extends React.Component {
               </p>
             }
 
-            {e.links && e.links.pic
-              ? <a href={e.links.pic} tilte='Visit website' target='_blank'>
-                  <img src={e.pic} alt={e.name} title={`Project: ${e.name}`} />
-                </a>
-              : e.pic &&
-                <img src={e.pic} alt={e.name} title={`Project: ${e.name}`} />
-            }
           </div>
         )}
         <br />
