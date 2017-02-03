@@ -7,6 +7,7 @@ import { rhythm } from 'utils/typography'
 import { config } from 'config'
 import Footer from 'components/Footer'
 import PageTitle from 'components/PageTitle'
+import ReactDisqusThread from 'react-disqus-thread'
 
 import '../css/zenburn.css'
 
@@ -62,6 +63,14 @@ class MarkdownWrapper extends React.Component {
           Posted {moment(post.date).format('MMMM D, YYYY')}
         </em>
         <ReadNext post={post} pages={route.pages} />
+
+        <ReactDisqusThread
+          shortname="pixareablog"
+          identifier={this.props.route.path}
+          title={post.title}
+          url={`http://blog.pixarea.com${this.props.route.path}`}
+        />
+
         <Footer />
       </div>
     )
