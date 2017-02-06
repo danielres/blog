@@ -3,7 +3,7 @@ date: 2011-01-20 19:00:16
 path: /2011/01/mindmap-des-metaprogrammes-en-pnl/
 title: Métaprogrammes en PNL
 sub: Mindmap
-preview: mindmap-metaprogrammes.jpg
+preview: mindmap-metaprogrammes-preview-320x157.jpg
 ---
 
 Les métaprogrammes sont un de mes outils préférés en PNL, sans doute parce qu'on peut les utiliser de manière très simple et naturelle, avec des utilisation concrètes pourtant très intéressantes.

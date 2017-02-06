@@ -3,7 +3,7 @@ title: Opening Photoshop .psd files in Ubuntu
 sub:  (With Ubuntu 11.10 Oneiric Ocelot)
 date: 2011-10-20 08:02:41
 path: /2011/10/opening-photoshop-psd-files-in-ubuntu-11-10-oneiric-ocelot/
-preview: preview.jpg
+preview: libreoffice-save-psd-preview-320x157.jpg
 categories:
 - graphics
 - linux

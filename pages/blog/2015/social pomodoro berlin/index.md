@@ -3,7 +3,7 @@ title: Social pomodoro Berlin
 sub: Creating & relaxing together
 date: 2015-05-08 17:19:32
 path: "/2015/05/Social-pomodoro-Berlin/"
-preview: social-pomodoro-berlin-3b.jpg
+preview: social-pomodoro-berlin-preview-394x224.jpg
 ---
 
 You just need to come with something you want to work on, your tools, and your beautiful mind !
