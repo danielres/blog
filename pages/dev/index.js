@@ -12,12 +12,14 @@ const IGithub = () =>
 const entries = [
   {
     name: 'React-redux-rails-oauth-boilerplate <br />',
-    desc: `An open-source boilerplate for apps with decoupled frontend and backend
-           using token authentication and Facebook as an auth provider. <br />
-           Allows faster development of apps based on this stack.<br />`,
+    desc: `<p>An opensource boilerplate for apps with decoupled frontend and backend using token authentication, with Facebook as an OAuth provider.</p>
+           <p>Accelerates the development of modern web apps by providing a ready-to-use stack.</p>
+           <p>Feel free to use/fork/contribute !</p>`,
     tags: ['React', 'Redux', 'Redux-sagas', 'Oauth', 'Rails', 'NodeJS', 'Rspec', 'TDD'],
+    pic: 'react-redux-rails-oauth-boilerplate.jpg',
     links: {
       github: 'danielres/react-redux-rails-oauth-boilerplate',
+      pic: 'https://github.com/danielres/react-redux-rails-oauth-boilerplate',
     }
   },
   {
@@ -30,7 +32,7 @@ const entries = [
   },
   {
     name: 'Spirales',
-    tags: ['Rails', 'RefineryCMS', 'Custom Events Engine', 'Paypal SDK'],
+    tags: ['Rails', 'RefineryCMS', 'Custom Events Engine', 'Paypal SDK', 'Custom design'],
     desc: `<p>The offical website for a well-being association located near Reims, France.</p>
             <p>This website is built with <a class="text-link" href="http://www.refinerycms.com/" target"_blank">RefineryCMS</a>, and allows the client to have complete control over the contents.</p>
             <p>The association organizes frequent activities, therefore I developed an custom event engine as well as a secure booking
@@ -67,8 +69,10 @@ const entries = [
   },
   {
     name: 'Nathalie Champougny',
-    tags: ['Rails', 'RefineryCMS'],
-    desc: 'Personal website of psychologist Nathalie Champougny.',
+    tags: ['Rails', 'RefineryCMS', 'Custom design'],
+    desc: `<p>The professional website of psychologist Nathalie Champougny.</p>
+           <p>This website is built with <a class="text-link" href="http://www.refinerycms.com/" target"_blank">RefineryCMS</a>, and allows Nathalie to have complete control over the contents.</p>
+          `,
     pic: 'psynath.png',
     links: {
       pic: 'http://www.psynath.com/',
@@ -76,7 +80,7 @@ const entries = [
   },
   {
     name: 'Expresto',
-    desc: 'A collaborative and social platform to learn and share idiomatic expressions in many languages.',
+    desc: '<p>A collaborative and social platform to learn and share idiomatic expressions in many languages.</p>',
     tags: ['Rails', 'Rspec', 'TDD', 'I18n'],
     pic: 'expresto.jpg',
     links: {
@@ -86,7 +90,7 @@ const entries = [
   {
     name: 'Kizedec',
     tags: ['Rails', 'RefineryCMS'],
-    desc: 'Personal website of life-coach Jean-Luc Champougny.',
+    desc: '<p>Personal website of life-coach Jean-Luc Champougny.</p>',
     pic: 'kizedec.png',
     links: {
       pic: 'http://www.kizedec.com/',
@@ -94,13 +98,13 @@ const entries = [
   },
   {
     name: 'Association C.G. Jung and M.L. Von Franz ',
-    desc: 'Offical website for the association.',
+    desc: '<p>Offical website for the association.</p>',
     tags: ['Rails', 'RefineryCMS'],
     pic: 'mlvf.png',
   },
   {
     name: 'Tempo',
-    desc: 'Simplest possible sinatra app to generate reports for the very nice <a href="https://github.com/projecthamster/hamster" target="_blank">hamster time-tracker</a>.',
+    desc: '<p>Simplest possible sinatra app to generate reports for the very nice <a href="https://github.com/projecthamster/hamster" target="_blank">hamster time-tracker</a>.</p>',
     tags: ['Sinatra', 'Ruby'],
     links: {
       github: 'danielres/tempo',
@@ -140,11 +144,11 @@ const EntryTitle = styled((p) =>
   )`
   font-weight: normal;
   margin-top: 0.2em;
-  margin-bottom: 0.8em;
+  margin-bottom: 0.9em;
   .text {
     margin-right: 1.5em;
     display: inline-block;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.2em;
   }
   .tags {
     display: inline-block;
@@ -195,7 +199,7 @@ const EntryContents = styled(({e, className}) => {
     .pic {
       @media screen and (min-width: 480px){
         float: left;
-        width: 40%;
+        width: 36%;
       }
       img {
         border: 4px solid transparent;
@@ -203,6 +207,7 @@ const EntryContents = styled(({e, className}) => {
         box-sizing: content-box;
         transition-duration: 0.4s;
         margin-left: -4px;
+        margin-bottom: 1em;
         &:hover {
           border: 4px solid #58BCFF;
           background: #58BCFF;
@@ -213,14 +218,17 @@ const EntryContents = styled(({e, className}) => {
     .hasPic .links {
       @media screen and (min-width: 480px){
         float: right;
-        width: 57%;
+        width: 60%;
       }
+    }
+    .desc {
+      color: #444;
     }
     .desc,
     .links {
       line-height: 1.6;
       p {
-        margin-bottom: 1.4em
+        margin-bottom: 1.2em
       }
     }
   `
@@ -229,7 +237,7 @@ class Gallery extends React.Component {
   render () {
     return (
       <div>
-        <PageTitle>Programming</PageTitle>
+        <PageTitle>Programming & design</PageTitle>
         {entries.map((e) =>
           <Entry key={e.name}>
             <EntryTitle text={e.name} tags={e.tags} />
