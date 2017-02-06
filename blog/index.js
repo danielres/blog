@@ -17,8 +17,8 @@ const LinkIf = (props) =>
   ? <Link to={props.to}>{props.children}</Link>
   : <span>{props.children}</span>
 
-const _Entry = (props) =>
-  <div className={props.className}>
+const _Entry = (props) => {
+  return <div className={props.className}>
     <LinkIf
       if={!props.page.data.noLink}
       to={prefixLink(props.page.path)}
@@ -36,17 +36,18 @@ const _Entry = (props) =>
           className='preview'
         >
           <img
-            width={320}
+            width={props.preview.match(/-(\d+)x(\d+)\./)[1]}
+            height={props.preview.match(/-(\d+)x(\d+)\./)[2]}
             style={{borderRadius: 7, border: '2px solid #ddd', margin: '10px 0 0'}}
             src={prefixLink(props.page.path) + props.preview}
             alt='Article preview'
           />
         </div>
       }
-      {console.log(props.page.data.body)}
       {props.page.data.noLink && <div dangerouslySetInnerHTML={{ __html: props.page.data.body }} />}
     </LinkIf>
   </div>
+}
 
 const Entry = styled(_Entry)`
   margin: 0 0 3px;
