@@ -37,7 +37,6 @@ const _Entry = (props) => {
         >
           <img
             width={props.preview.match(/-(\d+)x(\d+)\./)[1]}
-            height={props.preview.match(/-(\d+)x(\d+)\./)[2]}
             style={{borderRadius: 7, border: '2px solid #ddd', margin: '10px 0 0'}}
             src={prefixLink(props.page.path) + props.preview}
             alt='Article preview'
