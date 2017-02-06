@@ -14,21 +14,22 @@ class Bio extends React.Component {
         }}
       >
         <img
-          src={prefixLink('/static/img/profile-pic.jpg')}
+          src={prefixLink('/static/img/profile-pic-60x60.jpg')}
           alt={`author ${config.authorName}`}
+          width={60}
+          height={60}
           style={{
             float: 'left',
             marginRight: rhythm(1/4),
             marginTop: -5,
             marginBottom: 0,
-            width: rhythm(2.2),
-            height: rhythm(2.2),
             borderRadius: '100%',
             border: '4px solid #f6f6f6',
+            boxSizing: 'content-box',
           }}
         />
         <div
-          style={{ marginLeft: 70}}
+          style={{ marginLeft: 80}}
         >
           Crafted with <IHeart style={{ position: 'relative', top: -2, color: 'gray'}} />  by <strong>{config.authorName}</strong> who lives and works in Berlin building useful things.
           {' '}
