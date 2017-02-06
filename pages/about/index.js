@@ -34,26 +34,36 @@ const Envelope = styled(_Envelope)`
   border-radius: 20%;
 `
 
-const Portrait = styled((p) => <img width={200} height={200} {...p} src='portrait.jpg' />)`
-  border-radius: 100%;
-  padding: 0;
-  float: right;
-  margin-top: 40px;
-  margin-right: 0px;
-  border: 2px solid #6DB4F5;
-  background: #6DB4F5;
-  transform: rotate(9deg);
+const Portrait = styled((p) => <div className={p.className}><img width={150} height={150} {...p} src='portrait.jpg' /></div>)`
+  text-align: center;
+  @media screen and (min-width: 480px) {
+    float: right;
+    margin-right: 0px;
+    width: 200px;
+    height: 200px;
+    margin-top: 40px;
+  }
+  img {
+    margin-top: 0;
+    border-radius: 100%;
+    padding: 0;
+    border: 2px solid #6DB4F5;
+    background: #6DB4F5;
+    transform: rotate(9deg);
+  }
 `
 
 const BorderLeft = styled.div`
-  border-left: 3px solid #ddd;
-  padding-left: 20px;
-  margin-bottom:20px;
+    border-left: 3px solid #ddd;
+    padding-left: 20px;
+    margin-bottom:20px;
 `
 
 const S = styled.span`
-  position: relative;
-  left: -29px;
+  @media screen and (min-width: 480px) {
+    position: relative;
+    left: -29px;
+  }
   margin-top: 20px;
   display: inline-block;
   text-align: center;
