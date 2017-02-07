@@ -203,7 +203,7 @@ const EntryContents = styled(({e, className}) => {
   return <div className={`${className}`}>
       <div className='pic'>
         {e.links && e.links.pic
-          ? <a href={e.links.pic} tilte='Visit website' target='_blank'>
+          ? <a href={e.links.pic} title='Visit website' target='_blank'>
               <img src={e.pic} alt={e.name} title={`Project: ${e.name}`} />
             </a>
           : e.pic &&
