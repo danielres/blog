@@ -4,6 +4,7 @@ import FaFlickr from 'react-icons/lib/fa/flickr'
 import Lightbox from 'react-images'
 import styled from 'styled-components'
 import PageTitle from 'components/PageTitle'
+import './lightbox-styles.css'
 
 const Img = (props) =>
   <img
@@ -58,6 +59,46 @@ const LightboxTheme = {
   }
 }
 
+
+const FlickrLink = styled(
+  (p) =>
+    <p className={p.className}>
+      {' '}
+      <a
+        href='https://www.flickr.com/photos/pixarea/albums'
+        target='_blank'
+      >
+        <FaFlickr style={{ fontSize: '130%', color: '#555', position: 'relative', top: -2, marginRight: '0.2em'}} />
+        <span>
+          More on Flickr
+        </span>
+      </a>
+    </p>
+  )`
+    text-align: center;
+    a {
+      display: block;
+      padding: 100px 0;
+      margin: 10% 30%;
+      background: white;
+      transition-duration: 0.2s;
+      box-shadow: -5px 5px 20px rgba(0,0,0, .25);
+      &:hover{
+        background: white;
+        box-shadow: -30px 30px 25px rgba(0,0,0, .15);
+      }
+      border-radius: 10px;
+      span {
+       border-bottom: 1px dotted #ABDDFE;
+        transition-duration: 0.2s;
+      }
+      &:hover span {
+        // border-bottom: 1px solid ;
+      }
+
+    }
+  `
+
 class Gallery extends React.Component {
   constructor(props) {
     super(props)
@@ -107,22 +148,7 @@ class Gallery extends React.Component {
           />
         )}
 
-        <br />
-        <br />
-
-        <p className='text-center'>
-          <FaFlickr style={{ fontSize: '130%', color: '#555', position: 'relative', top: -2}} />
-          {' '}
-          <a
-            className='text-link'
-            href='https://www.flickr.com/photos/pixarea/albums'
-            target='_blank'
-          >
-            More of my creations on Flickr
-          </a>
-        </p>
-
-        <br />
+        <FlickrLink />
 
         <Footer />
       </div>
