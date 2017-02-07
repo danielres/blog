@@ -44,7 +44,7 @@ const entries = [
             <p>This website is built with <a class="text-link" href="http://www.refinerycms.com/" target"_blank">RefineryCMS</a>, and allows the client to have complete control over the contents.</p>
             <p>The association organizes frequent activities, therefore I developed an custom event engine as well as a secure booking
             & online payment system that uses the Paypal API.</p>`,
-    pic: 'spirales.jpg',
+    pic: 'spirales-400x340.jpg',
     links: {
       pic: 'http://www.spirales.info/',
     }
@@ -52,7 +52,7 @@ const entries = [
   {
     name: 'WYMeditor',
     tags: ['Javascript', 'CSS'],
-    pic: 'wymeditor.jpg',
+    pic: 'wymeditor-400x330.jpg',
     links: {
       pic: 'http://www.wymeditor.org/',
     },
@@ -81,7 +81,7 @@ const entries = [
     desc: `<p>The professional website of psychologist Nathalie Champougny.</p>
            <p>This website is built with <a class="text-link" href="http://www.refinerycms.com/" target"_blank">RefineryCMS</a>, and allows Nathalie to have complete control over the contents.</p>
           `,
-    pic: 'psynath.png',
+    pic: 'psynath-400x300.jpg',
     links: {
       pic: 'http://www.psynath.com/',
     }
@@ -94,7 +94,7 @@ const entries = [
               it and develop it further. But I'd like to come back to it at some point and develop it further.</p>
           `,
     tags: ['Rails', 'Rspec', 'TDD', 'I18n'],
-    pic: 'expresto.jpg',
+    pic: 'expresto-400x360.jpg',
     links: {
       pic: 'http://expresto.herokuapp.com/en',
       github: 'danielres/expresto_BDD',
@@ -107,7 +107,7 @@ const entries = [
            <p>This website is built with <a class="text-link" href="http://www.refinerycms.com/" target"_blank">RefineryCMS</a>, and allows Jean-Luc to have complete control over the contents.</p>
            <p>It also features a custom-made admin section to manage events and speakers.</p>
            `,
-    pic: 'kizedec.png',
+    pic: 'kizedec-400x300.jpg',
     links: {
       pic: 'http://www.kizedec.com/',
     }
@@ -118,7 +118,7 @@ const entries = [
            <p>This website is built with <a class="text-link" href="http://www.refinerycms.com/" target"_blank">RefineryCMS</a>, and allows the association to have complete control over the contents.</p>
           `,
     tags: ['Rails', 'RefineryCMS', 'Custom design'],
-    pic: 'mlvf.png',
+    pic: 'mlvf-400x270.jpg',
     links: {
       pic: 'http://www.vonfranzjung.fr/',
     }
