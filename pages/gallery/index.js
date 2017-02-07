@@ -6,12 +6,30 @@ import styled from 'styled-components'
 import PageTitle from 'components/PageTitle'
 import './lightbox-styles.css'
 
-const Img = (props) =>
-  <img
-    title={props.alt}
-    style={{borderRadius: 10, cursor: 'pointer', marginBottom: 20, display: 'block'}}
-    {...props}
-  />
+const Img = styled(
+  (p) =>
+    <img
+      title={p.alt}
+      className={p.className}
+      {...p}
+    />
+  )`
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    display: block;
+    position: relative;
+    top: 0;
+    right: 0;
+    border: 3px solid #ddd;
+    transition-duration: 0.2s;
+    box-shadow: -2px 5px 10px rgba(0,0,0, 0.45);
+    &:hover{
+      box-shadow: -2px 10px 25px rgba(0,0,0, 0.45);
+      top: -1px;
+      right: 0;
+    }
+  `
 
 const images = [
   { src: 'octo.jpg'                , alt: 'Drawing: Meet my friend Octopus'   },
