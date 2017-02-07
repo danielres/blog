@@ -48,7 +48,7 @@ const LightboxTheme = {
     },
   },
   container: {
-    background: 'rgba(0, 0, 0, 0.95)',
+    background: 'rgba(31, 26, 16, 1)',
   },
   image: {
     borderRadius: 100,
