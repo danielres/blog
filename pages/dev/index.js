@@ -23,9 +23,16 @@ const entries = [
     }
   },
   {
-    name: 'Marketplace',
-    desc: 'A platform to improve efficiency and ease self-management in companies organized in a flat hierarchy (holacracy).',
-    tags: ['Rails', 'Pure Ruby', 'AngularJS', 'Rspec', 'TDD'],
+    name: 'Oniryx Marketplace',
+    desc: `<p>As <a href="http://www.oniryx.be/" target="_blank" class="text-link">Oniryx</a>, a 30-people Belgian software engineering company, transitioned
+           to a flat-hierarchy structure (<a href="http://www.holacracy.org/" target="_blank" class="text-link">holacracy</a>),
+            the need for radically new collaboration tools became very apparent.</p>
+           <p>I imagined and built for them this 100% custom platform, which reveals, in real-time, to all employees and collabrators,
+           all the necessary information needed for real self-management.</p>
+           <p>For 2 years already, it is used as the company central hub, to centralize and access all crucial information for
+           collective and individual decision making, and to keep everyone in sync.</p>
+           `,
+    tags: ['Rails', 'Oauth', 'AngularJS', 'Rspec', 'TDD'],
     links: {
       github: 'danielres/maketplace',
     }
@@ -90,7 +97,10 @@ const entries = [
   {
     name: 'Kizedec',
     tags: ['Rails', 'RefineryCMS'],
-    desc: '<p>Personal website of life-coach Jean-Luc Champougny.</p>',
+    desc: `<p>Personal website of life-coach Jean-Luc Champougny.</p>
+           <p>This website is built with <a class="text-link" href="http://www.refinerycms.com/" target"_blank">RefineryCMS</a>, and allows Jean-Luc to have complete control over the contents.</p>
+           <p>It also features a custom-made admin section to manage events and speakers.</p>
+           `,
     pic: 'kizedec.png',
     links: {
       pic: 'http://www.kizedec.com/',
@@ -98,16 +108,28 @@ const entries = [
   },
   {
     name: 'Association C.G. Jung and M.L. Von Franz ',
-    desc: '<p>Offical website for the association.</p>',
-    tags: ['Rails', 'RefineryCMS'],
+    desc: `<p>Offical website for the association whose mission is to promote and study the works of Marie-Louise Von Franz.</p>
+           <p>This website is built with <a class="text-link" href="http://www.refinerycms.com/" target"_blank">RefineryCMS</a>, and allows the association to have complete control over the contents.</p>
+          `,
+    tags: ['Rails', 'RefineryCMS', 'Custom design'],
     pic: 'mlvf.png',
+    links: {
+      pic: 'http://www.vonfranzjung.fr/',
+    }
   },
   {
     name: 'Tempo',
-    desc: '<p>Simplest possible sinatra app to generate reports for the very nice <a href="https://github.com/projecthamster/hamster" target="_blank">hamster time-tracker</a>.</p>',
-    tags: ['Sinatra', 'Ruby'],
+    desc: `<p>For years, I've been using the very useful <a href="https://github.com/projecthamster/hamster" target="_blank">Hamster app</a> to track my time on Ubuntu.</p>
+           <p>I wanted to reduce manual work when generating reports and timesheets that I attach to my invoices. So I created Tempo, which reads directly from
+              Hamster's sqlite database and generate these documents automatically.
+           </p>
+           <p>Tempo is opensource, feel free to use and adapt it to your needs.</p>
+           `,
+    tags: ['Sinatra', 'Ruby', 'DataMapper', 'Turnip (cucumber-like testing with Rspec)'],
+    pic: 'tempo.jpg',
     links: {
       github: 'danielres/tempo',
+      pic: 'https://github.com/danielres/tempo/',
     }
   },
   // {
