@@ -28,10 +28,9 @@ const entries = [
            to a flat-hierarchy structure (<a href="http://www.holacracy.org/" target="_blank" class="text-link">holacracy</a>),
             the need for radically new collaboration tools became very apparent.</p>
            <p>I imagined and built for them this 100% custom platform, which reveals, in real-time, to all employees and collabrators,
-           all the necessary information needed for real self-management.</p>
-           <p>For 2 years already, it is used as the company central hub, to centralize and access all crucial information for
-           collective and individual decision making, and to keep everyone in sync.</p>
-           <p>Links to source and demo are currently not available.</p>
+           all the necessary information needed for individual and collective decision-making.</p>
+           <p>For 2 years already, it is used as the company central hub, to centralize and access crucial information and keep everyone in sync.</p>
+           <p class="mute">Links to source and demo are currently not available.</p>
            `,
     tags: ['Rails', 'Oauth', 'AngularJS', 'Rspec', 'TDD'],
     links: {
@@ -40,11 +39,11 @@ const entries = [
   },
   {
     name: 'Spirales',
-    tags: ['Rails', 'RefineryCMS', 'Custom Events Engine', 'Paypal SDK', 'Custom design'],
+    tags: ['Rails', 'RefineryCMS', 'Custom Events Engine', 'Paypal SDK', 'Custom design', 'PDF generation'],
     desc: `<p>The offical website for a well-being association located near Reims, France.</p>
             <p>This website is built with <a class="text-link" href="http://www.refinerycms.com/" target"_blank">RefineryCMS</a>, and allows the client to have complete control over the contents.</p>
             <p>The association organizes frequent activities, therefore I developed an custom event engine as well as a secure booking
-            and online payment system that uses the Paypal API.</p>`,
+            & online payment system that uses the Paypal API.</p>`,
     pic: 'spirales.jpg',
     links: {
       pic: 'http://www.spirales.info/',
@@ -52,6 +51,7 @@ const entries = [
   },
   {
     name: 'WYMeditor',
+    tags: ['Javascript', 'CSS'],
     pic: 'wymeditor.jpg',
     links: {
       pic: 'http://www.wymeditor.org/',
@@ -88,10 +88,15 @@ const entries = [
   },
   {
     name: 'Expresto',
-    desc: '<p>A collaborative and social platform to learn and share idiomatic expressions in many languages.</p>',
+    desc: `<p>Every language and culture have their own fantastic idiomatic expressions.</p>
+           <p>With this personal project, I wanted to provide a collaborative platform to collect, share and learn about them.</p>
+           <p>Even though the platform is fully functional, I haven't had the time yet to communicate about
+              it and develop it further. But I'd like to come back to it at some point and develop it further.</p>
+          `,
     tags: ['Rails', 'Rspec', 'TDD', 'I18n'],
     pic: 'expresto.jpg',
     links: {
+      pic: 'http://expresto.herokuapp.com/en',
       github: 'danielres/expresto_BDD',
     }
   },
@@ -121,7 +126,7 @@ const entries = [
   {
     name: 'Tempo',
     desc: `<p>For years, I've been using the very useful <a href="https://github.com/projecthamster/hamster" target="_blank">Hamster app</a> to track my time on Ubuntu.</p>
-           <p>I wanted to reduce manual work when generating reports and timesheets that I attach to my invoices. So I created Tempo, which reads directly from
+           <p>I wanted to reduce manual work when generating the reports and timesheets that I attach to my invoices. So I created Tempo, which reads directly from
               Hamster's sqlite database and generates these documents automatically.
            </p>
            <p>Tempo is opensource, feel free to use and adapt it to your needs.</p>
