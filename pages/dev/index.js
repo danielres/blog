@@ -12,8 +12,8 @@ const IGithub = () =>
 const entries = [
   {
     name: 'React-redux-rails-oauth-boilerplate <br />',
-    desc: `<p>An opensource boilerplate for apps with decoupled frontend and backend using token authentication, with Facebook as an OAuth provider.</p>
-           <p>Accelerates the development of modern web apps by providing a ready-to-use stack.</p>
+    desc: `<p>An opensource boilerplate for modern web apps with decoupled frontend and backend using token authentication, with Facebook as an OAuth provider.</p>
+           <p>Accelerates the development of these apps by providing a ready-to-use stack.</p>
            <p>Feel free to use/fork/contribute !</p>`,
     tags: ['React', 'Redux', 'Redux-sagas', 'Oauth', 'Rails', 'NodeJS', 'Rspec', 'TDD'],
     pic: 'react-redux-rails-oauth-boilerplate.jpg',
@@ -31,10 +31,11 @@ const entries = [
            all the necessary information needed for real self-management.</p>
            <p>For 2 years already, it is used as the company central hub, to centralize and access all crucial information for
            collective and individual decision making, and to keep everyone in sync.</p>
+           <p>Links to source and demo are currently not available.</p>
            `,
     tags: ['Rails', 'Oauth', 'AngularJS', 'Rspec', 'TDD'],
     links: {
-      github: 'danielres/maketplace',
+      // github: 'danielres/maketplace',
     }
   },
   {
@@ -60,7 +61,7 @@ const entries = [
             challenging the very concept of existing WYSYWIG editors, and allowing for higher-quality and more reliable output.
            </p>
            <p>
-             WYMeditor is still improving and being used and integrated in a
+             WYMeditor is still improving and being used in a
              long and growing list of high-profile websites (see <a href="http://www.wymeditor.org/" class="text-link" target="_blank">Applications using WYMeditor</a>),
              such as
              <a href="http://www.kickstarter.com/" target="_blank" class="text-link">Kickstarter</a> and
@@ -121,7 +122,7 @@ const entries = [
     name: 'Tempo',
     desc: `<p>For years, I've been using the very useful <a href="https://github.com/projecthamster/hamster" target="_blank">Hamster app</a> to track my time on Ubuntu.</p>
            <p>I wanted to reduce manual work when generating reports and timesheets that I attach to my invoices. So I created Tempo, which reads directly from
-              Hamster's sqlite database and generate these documents automatically.
+              Hamster's sqlite database and generates these documents automatically.
            </p>
            <p>Tempo is opensource, feel free to use and adapt it to your needs.</p>
            `,
