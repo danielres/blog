@@ -199,7 +199,6 @@ const EntryTitle = styled((p) =>
   `
 
 const EntryContents = styled(({e, className}) => {
-  console.log(e)
   const hasPic = e.pic ? 'hasPic' : ''
   return <div className={`${className}`}>
       <div className='pic'>
