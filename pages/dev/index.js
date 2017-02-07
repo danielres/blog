@@ -165,7 +165,7 @@ const EntryTitle = styled((p) =>
     />
     {p.tags  &&
       <small className='tags'>
-        {p.tags.map((t) => <span className='tag'>{t}</span>)}
+        {p.tags.map((t) => <span key={t} className='tag'>{t}</span>)}
       </small>
     }
   </h3>
