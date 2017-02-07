@@ -265,7 +265,7 @@ class Gallery extends React.Component {
   render () {
     return (
       <div>
-        <PageTitle>Programming & design</PageTitle>
+        <PageTitle>Programming</PageTitle>
         {entries.map((e) =>
           <Entry key={e.name}>
             <EntryTitle text={e.name} tags={e.tags} />
