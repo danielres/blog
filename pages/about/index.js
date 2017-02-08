@@ -93,6 +93,36 @@ const S = styled.span`
   }
 `
 
+const ContactLink = styled(
+  (p) =>
+    <a
+      href="https://docs.google.com/forms/d/1BxhAu46f-qdPS-SDYsdF3RS1W1yKR2mkSKy0K7OXLoI/viewform"
+      target="_blank"
+      rel="external"
+    >
+      <p className={p.className}>
+        <Envelope className='icon' />
+        <span>Ask me anything</span>
+      </p>
+    </a>
+  )`
+    .icon {
+      transition-duration: 0.4s;
+    }
+    &:hover .icon {
+      color: #5790C4;
+    }
+    span {
+      border-bottom: 1px solid #ABDDFE;
+      transition-duration: 0.2s;
+    }
+    &:hover span {
+      border-bottom: 1px solid #007acc;
+    }
+  `
+
+
+
 class Page extends React.Component {
   render () {
     return (
@@ -118,18 +148,7 @@ class Page extends React.Component {
 
         </BorderLeft>
 
-        <p>
-          <Envelope />
-
-          <a
-            href="https://docs.google.com/forms/d/1BxhAu46f-qdPS-SDYsdF3RS1W1yKR2mkSKy0K7OXLoI/viewform"
-            target="_blank"
-            rel="external"
-            className="text-link"
-          >
-            Ask me anything
-          </a>
-        </p>
+        <ContactLink />
 
         <BorderLeft>
           Phone: +49 (0) 1575 160 1005<br />
