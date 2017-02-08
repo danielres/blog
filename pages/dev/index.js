@@ -67,6 +67,7 @@ const entries = [
     pic: 'spirales-400x340.jpg',
     links: {
       pic: 'http://www.spirales.info/',
+      web: { href: 'http://www.spirales.info/', text: 'spirales.info'}
     }
   },
   {
@@ -75,6 +76,7 @@ const entries = [
     pic: 'wymeditor-400x330.jpg',
     links: {
       pic: 'http://www.wymeditor.org/',
+      github: 'wymeditor/wymeditor',
     },
     desc: `<p>
             Back in 2005, with <a href="http://hovinne.com/" target="_blank" class="text-link">Jean-François Hovinne</a>, we launched a new type of online editor,
@@ -104,6 +106,7 @@ const entries = [
     pic: 'psynath-400x300.jpg',
     links: {
       pic: 'http://www.psynath.com/',
+      web: {href: 'http://www.psynath.com/', text: 'psynath.com'},
     }
   },
   {
@@ -130,6 +133,7 @@ const entries = [
     pic: 'kizedec-400x300.jpg',
     links: {
       pic: 'http://www.kizedec.com/',
+      web: {href: 'http://www.kizedec.com/', text: 'kizedec.com'},
     }
   },
   {
@@ -141,6 +145,7 @@ const entries = [
     pic: 'mlvf-400x270.jpg',
     links: {
       pic: 'http://www.vonfranzjung.fr/',
+      web: {href: 'http://www.vonfranzjung.fr/', text: 'vonfranzjung.fr'},
     }
   },
   {
@@ -236,14 +241,14 @@ const EntryContents = styled(({e, className}) => {
         {e.links && e.links.github &&
           <p className='links'>
             <I><IGithub /></I>
-            <a className='text-link' href={`https://github.com/${e.links.github}`}>{e.links.github}</a>
+            <a className='text-link' target="_blank" href={`https://github.com/${e.links.github}`}>{e.links.github}</a>
           </p>
         }
 
         {e.links && e.links.web &&
           <p className='links'>
             <I><IWebLink /></I>
-            <a className='text-link' href={`https://github.com/${e.links.web.href}`}>{e.links.web.text}</a>
+            <a className='text-link' target="_blank" href={e.links.web.href}>{e.links.web.text}</a>
           </p>
         }
       </div>
