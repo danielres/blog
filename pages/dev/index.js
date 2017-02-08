@@ -9,6 +9,8 @@ const I = styled.span`
   font-size: 170%;
   color: gray;
   margin-right: 0.2em;
+  position: relative;
+  top: 1px;
 `
 
 
