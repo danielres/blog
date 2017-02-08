@@ -1,13 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 import Footer from 'components/Footer'
-import _IGithub from 'react-icons/lib/fa/github'
+import IGithub from 'react-icons/lib/fa/github'
+import IWebLink from 'react-icons/lib/fa/globe'
 import PageTitle from 'components/PageTitle'
 
-const IGithub = () =>
-  <span style={{fontSize: '170%', color: 'gray'}}>
-    <_IGithub />
-  </span>
+const I = styled.span`
+  font-size: 170%;
+  color: gray;
+  margin-right: 0.2em;
+`
+
 
 const entries = [
   {
@@ -20,6 +23,23 @@ const entries = [
     links: {
       github: 'danielres/react-redux-rails-oauth-boilerplate',
       pic: 'https://github.com/danielres/react-redux-rails-oauth-boilerplate',
+    }
+  },
+  {
+    name: 'Finedining Guide',
+    desc: `<p>Built for the Berlin-based company "Seatris".</p>
+           <p>For this web app, which is a guide and search engine of the world's finest restaurants, I built the whole frontend, using the most modern web technologies.</p>
+           <p>I also built a new API inside the existing Rails backend, to address the specific needs of this new frontend.</p>
+           <p>To visit and use the guide:</p>
+           `,
+    pic: 'finedining-guide-3-400x530.jpg',
+    tags: ['React', 'Redux', 'Redis', 'Rails api', 'NodeJS', 'Responsive Design'],
+    links: {
+      pic: 'https://www.finediningexperiences.com/',
+      web: {
+        href: 'https://www.finediningexperiences.com/',
+        text: 'finediningexperiences.com'
+      }
     }
   },
   {
@@ -114,7 +134,7 @@ const entries = [
   },
   {
     name: 'Association C.G. Jung and M.L. Von Franz ',
-    desc: `<p>Offical website for the association whose mission is to promote and study the works of Marie-Louise Von Franz.</p>
+    desc: `<p>Offical website for the association whose mission is to promote and study the works of Marie-Louise Von Franz, one of C.G Jung's most important associates.</p>
            <p>This website is built with <a class="text-link" href="http://www.refinerycms.com/" target"_blank">RefineryCMS</a>, and allows the association to have complete control over the contents.</p>
           `,
     tags: ['Rails', 'RefineryCMS', 'Custom design'],
@@ -126,7 +146,7 @@ const entries = [
   {
     name: 'Tempo',
     desc: `<p>For years, I've been using the very useful <a href="https://github.com/projecthamster/hamster" target="_blank">Hamster app</a> to track my time on Ubuntu.</p>
-           <p>I wanted to reduce manual work when generating the reports and timesheets that I attach to my invoices. So I created Tempo, which reads directly from
+           <p>I wanted to reduce manual work when generating the reports and timesheets that I attach to my invoices. So I created Tempo, which reads data directly from
               Hamster's sqlite database and generates these documents automatically.
            </p>
            <p>Tempo is opensource, feel free to use and adapt it to your needs.</p>
@@ -215,9 +235,15 @@ const EntryContents = styled(({e, className}) => {
 
         {e.links && e.links.github &&
           <p className='links'>
-            <IGithub />
-            {' '}
+            <I><IGithub /></I>
             <a className='text-link' href={`https://github.com/${e.links.github}`}>{e.links.github}</a>
+          </p>
+        }
+
+        {e.links && e.links.web &&
+          <p className='links'>
+            <I><IWebLink /></I>
+            <a className='text-link' href={`https://github.com/${e.links.web.href}`}>{e.links.web.text}</a>
           </p>
         }
       </div>
