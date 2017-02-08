@@ -108,10 +108,10 @@ const entries = [
   },
   {
     name: 'Expresto',
-    desc: `<p>Every language and culture have their own fantastic idiomatic expressions.</p>
-           <p>With this personal project, I wanted to provide a collaborative platform to collect, share and learn about them.</p>
-           <p>Even though the platform is fully functional, I haven't had the time yet to communicate about
-              it and develop it further. But I'd like to come back to it at some point and develop it further.</p>
+    desc: `<p>Every language and culture have their own fascinating, colorful, surprising, funny or sad idiomatic expressions.</p>
+           <p>With this personal project, I wanted to provide a collaborative platform to collect, share and learn about them, in all languages.</p>
+           <p>Even though the platform is functional, I haven't had the time yet to communicate about
+              it and develop it further. But I'd like to come back to it at some point.</p>
           `,
     tags: ['Rails', 'Rspec', 'TDD', 'I18n'],
     pic: 'expresto-400x360.jpg',
