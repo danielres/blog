@@ -82,10 +82,14 @@ const S = styled.span`
     }
   a {
     color: inherit;
-    border-bottom: none;
-    &:hover {
-      border-bottom: none;
-    }
+  }
+  position: relative;
+  transition-duration: 0.2s;
+  top: 0;
+  box-shadow: 0 0 0 rgba(0,0,0,0);
+  &:hover {
+    top: -5px;
+    box-shadow: -0px 10px 10px rgba(0,0,0,0.2);
   }
 `
 
