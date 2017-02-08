@@ -1,5 +1,5 @@
 ---
-title: Using Travis CI for Rails + NodeJS
+title: Using Travis CI for Rails + Node.js
 sub: How to set up travis.yml for multiple languages
 date: 2017-02-08
 path: "/2017/02/travis+rails+nodejs/"
