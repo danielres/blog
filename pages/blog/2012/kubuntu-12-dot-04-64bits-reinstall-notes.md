@@ -122,21 +122,23 @@ In a terminal (konsole):
 
 Using the "muon software center" (from the KDE menu):
 
-- Remove: 
-  - Amarok
+* Remove: 
+  * Amarok
 
-- Install:
-  - Guayadeque
-  - Krita
-  - Scribus
-  - K4dirstat
-  - Inkscape
+* Install:
+  * Guayadeque
+  * Krita
+  * Scribus
+  * K4dirstat
+  * Inkscape
 
 ### 2.3. Enable the media keys for Gayadeque
 
 - Launch "Custom shortcuts" from menu
 - Create new group called "Guayadeque", inside it, create new global shortcuts (edit>new>global shortcut > Command/URL)
-
+      <br>
+      <br>
+      
       "Next":         dbus-send --print-reply --type=method_call --dest=org.mpris.guayadeque /Player org.freedesktop.MediaPlayer.Next
       "Prev":         dbus-send --print-reply --type=method_call --dest=org.mpris.guayadeque /Player org.freedesktop.MediaPlayer.Prev
       "Play/Pause":   dbus-send --print-reply --type=method_call --dest=org.mpris.guayadeque /Player org.freedesktop.MediaPlayer.Pause
