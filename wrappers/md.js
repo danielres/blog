@@ -21,6 +21,24 @@ const Content = styled(
     img {
       border-radius: 10px;
     }
+    h2, h3 {
+      font-weight: normal;
+    }
+    blockquote {
+      border-left: 3px solid gray;
+      margin-left: 0;
+    }
+    ul {
+      list-style-position: outside;
+      margin-left: 1.5em;
+      margin-top: 0.5em;
+      li {
+        margin-bottom: 0;
+      }
+      p {
+        margin: 0;
+      }
+    }
   `
 
 const PostTitle = styled(
