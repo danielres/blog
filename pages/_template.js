@@ -1,4 +1,6 @@
 import React from 'react'
+import access from 'safe-access'
+import include from 'underscore.string/include'
 import { Link as _Link } from 'react-router'
 import { Container } from 'react-responsive-grid'
 import { prefixLink } from 'gatsby-helpers'
@@ -88,17 +90,19 @@ class Template extends React.Component {
       </div>
 
     return (
-      <Container
-        style={{
-          maxWidth: rhythm(28),
-          padding: `${rhythm(1.5)} ${rhythm(3/4)}`,
-        }}
-      >
-        {header}
-        <div className='main'>
-          {children}
-        </div>
-      </Container>
+      include(access(this, 'props.location.pathname'), '/cv/')
+      ? <div>{children}</div>
+      : <Container
+          style={{
+            maxWidth: rhythm(28),
+            padding: `${rhythm(1.5)} ${rhythm(3/4)}`,
+          }}
+        >
+          {header}
+          <div className='main'>
+            {children}
+          </div>
+        </Container>
     )
   }
 }
