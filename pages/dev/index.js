@@ -16,6 +16,7 @@ const I = styled.span`
 
 const entries = [
   {
+    anchor: 'boilerplate',
     name: 'React-redux-rails-oauth-boilerplate <br />',
     desc: `<p>An opensource boilerplate for modern web apps with decoupled frontend and backend using token authentication, with Facebook as an OAuth provider.</p>
            <p>Accelerates the development of these apps by providing a ready-to-use stack.</p>
@@ -28,6 +29,7 @@ const entries = [
     }
   },
   {
+    anchor: 'fde',
     name: 'Finedining Guide',
     desc: `<p>Built for the Berlin-based company "Seatris".</p>
            <p>For this web app, which is a guide and search engine of the world's finest restaurants, I built the whole frontend, using the most modern web technologies.</p>
@@ -45,6 +47,7 @@ const entries = [
     }
   },
   {
+    anchor: 'oniryx-mp',
     name: 'Oniryx Marketplace',
     desc: `<p>As <a href="http://www.oniryx.be/" target="_blank" class="text-link">Oniryx</a>, a 30-people Belgian software engineering company, transitioned
            to a flat-hierarchy structure (<a href="http://www.holacracy.org/" target="_blank" class="text-link">holacracy</a>),
@@ -60,6 +63,7 @@ const entries = [
     }
   },
   {
+    anchor: 'spirales',
     name: 'Spirales',
     tags: ['Rails', 'RefineryCMS', 'Custom Events Engine', 'Paypal SDK', 'Custom design', 'PDF generation'],
     desc: `<p>The offical website for a well-being association located near Reims, France.</p>
@@ -73,6 +77,7 @@ const entries = [
     }
   },
   {
+    anchor: 'wymeditor',
     name: 'WYMeditor',
     tags: ['Javascript', 'CSS'],
     pic: 'wymeditor-400x330.jpg',
@@ -100,6 +105,7 @@ const entries = [
            `,
   },
   {
+    anchor: 'psynath',
     name: 'Nathalie Champougny',
     tags: ['Rails', 'RefineryCMS', 'Custom design'],
     desc: `<p>The professional website of psychologist Nathalie Champougny.</p>
@@ -112,6 +118,7 @@ const entries = [
     }
   },
   {
+    anchor: 'expresto',
     name: 'Expresto',
     desc: `<p>Every language and culture have their own fascinating, colorful, surprising, funny or sad idiomatic expressions.</p>
            <p>With this personal project, I wanted to provide a collaborative platform to collect, share and learn about them, in all languages.</p>
@@ -126,6 +133,7 @@ const entries = [
     }
   },
   {
+    anchor: 'kizedec',
     name: 'Kizedec',
     tags: ['Rails', 'RefineryCMS'],
     desc: `<p>Personal website of life-coach Jean-Luc Champougny.</p>
@@ -139,6 +147,7 @@ const entries = [
     }
   },
   {
+    anchor: 'mlvf ',
     name: 'Association C.G. Jung and M.L. Von Franz ',
     desc: `<p>Offical website for the association whose mission is to promote and study the works of Marie-Louise Von Franz, one of C.G Jung's most important associates.</p>
            <p>This website is built with <a class="text-link" href="http://www.refinerycms.com/" target"_blank">RefineryCMS</a>, and allows the association to have complete control over the contents.</p>
@@ -151,6 +160,7 @@ const entries = [
     }
   },
   {
+    anchor: 'tempo',
     name: 'Tempo',
     desc: `<p>For years, I've been using the very useful <a href="https://github.com/projecthamster/hamster" target="_blank">Hamster app</a> to track my time on Ubuntu.</p>
            <p>I wanted to reduce manual work when generating the reports and timesheets that I attach to my invoices. So I created Tempo, which reads data directly from
@@ -299,7 +309,7 @@ class Gallery extends React.Component {
       <div>
         <PageTitle>Programming & Design</PageTitle>
         {entries.map((e) =>
-          <Entry key={e.name}>
+          <Entry key={e.name} name={e.anchor} id={e.anchor}>
             <EntryTitle text={e.name} tags={e.tags} />
             <EntryContents e={e} />
           </Entry>
