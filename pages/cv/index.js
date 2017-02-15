@@ -41,10 +41,10 @@ const PageTitle = styled(
 
 const Intro = () =>
     <div style={{fontWeight: 'normal', textAlign: 'center', lineHeight: 1.4}}>
-      <p>
+      <div>
         <div>I build APIs, responsive websites and web apps</div>
         <div>I'm fluent in React + Redux + Rails</div>
-      </p>
+      </div>
     </div>
 
 const Contents = styled(
