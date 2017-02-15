@@ -1,26 +1,12 @@
 import React from 'react'
 import moment from 'moment'
 import styled from 'styled-components'
-import _Envelope from 'react-icons/lib/fa/envelope'
 import CvLink from './CvLink'
-
-const Envelope = styled(_Envelope)`
-  color: #999;
-  font-size: 30px;
-  margin-right: 10px;
-  position: relative;
-  top: -2px;
-`
-
-
-const entries = [
-  {}
-]
 
 const Portrait = styled(
     (p) =>
       <div className={p.className}>
-        <img src='portrait.jpg' alt='' />
+        <img width={150} height={150} src='/static/img/cv-portrait-345x345.jpg' />
       </div>
   )`
   text-align: center;
@@ -39,7 +25,7 @@ const PageTitle = styled(
         <small>Full-stack developer <br /><small>(RoR+React/Redux/nodeJS)</small></small>
       </div>
     </h2>
-)`
+  )`
   font-weight: normal;
   text-align: center;
   line-height: 1.2;
@@ -51,20 +37,15 @@ const PageTitle = styled(
   small {
     color: gray;
   }
-
-`
-
-const Intro = styled(
-  (p) =>
-    <p className={p.className}>
-      <div>I build APIs, responsive websites and web apps</div>
-      <div>I'm fluent in React + Redux + Rails</div>
-    </p>
-  )`
-  font-weight: normal;
-  text-align: center;
-  line-height: 1.4;
   `
+
+const Intro = () =>
+    <div style={{fontWeight: 'normal', textAlign: 'center', lineHeight: 1.4}}>
+      <p>
+        <div>I build APIs, responsive websites and web apps</div>
+        <div>I'm fluent in React + Redux + Rails</div>
+      </p>
+    </div>
 
 const Contents = styled(
   (p) =>
@@ -95,7 +76,6 @@ const Contents = styled(
     background: white;
     padding: 3em 0 4em;
     border-radius: 20px;
-    // box-shadow: 0 5px 30px rgba(0,0,0,0.2);
     .list {
       text-align: center;
       p {
@@ -117,6 +97,5 @@ class CV extends React.Component {
     )
   }
 }
-
 
 export default CV

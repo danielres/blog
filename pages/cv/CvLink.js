@@ -35,7 +35,7 @@ const S = styled.span`
 const CvLink = () =>
   <div>
     <S>
-      <a title="Daniel Reszka - Full-stack developer CV" href="cv-full-stack-developer-2017-daniel-reszka.pdf">
+      <a title="Daniel Reszka - Full-stack developer CV" href="/static/pdf/cv-full-stack-developer-2017-daniel-reszka.pdf">
         <IPdf />
       </a>
     </S>
