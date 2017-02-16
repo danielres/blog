@@ -1,7 +1,12 @@
 import React from 'react'
+import { Link } from 'react-router'
 import moment from 'moment'
 import styled from 'styled-components'
 import CvLink from './CvLink'
+import IHome from 'react-icons/lib/ti/home'
+import ICode from 'react-icons/lib/io/code'
+import IPicture from 'react-icons/lib/io/android-color-palette'
+import IAbout from '../AboutIcon'
 
 const Portrait = styled(
     (p) =>
@@ -15,6 +20,19 @@ const Portrait = styled(
     border-radius: 100%;
     margin-bottom: 0.5em;
   }
+  `
+
+const I = styled(
+  (p) =>
+    <div {...p} />
+  )`
+    display: inline-block;
+    color: gray;
+    vertical-align: center;
+    position: relative;
+    top: -1px;
+    font-size: 22px;
+    margin-right: 2px;
   `
 
 const PageTitle = styled(
@@ -65,10 +83,10 @@ const Contents = styled(
       </div>
       <div className='list'>
         <p>You might also like to visit these pages</p>
-        <div><a className='text-link' href='/'>Blog</a></div>
-        <div><a className='text-link' href='/dev/'>Programming & Design</a></div>
-        <div><a className='text-link' href='/gallery/'>Gallery</a></div>
-        <div><a className='text-link' href='/about/'>About</a></div>
+        <div><I><IHome /></I>    <Link className='text-link' to='/'>Blog</Link></div>
+        <div><I><ICode /></I>    <Link className='text-link' to='/dev/'>Programming & Design</Link></div>
+        <div><I><IPicture /></I> <Link className='text-link' to='/gallery/'>Gallery</Link></div>
+        <div><I><IAbout /></I>   <Link className='text-link' to='/about/'>About</Link></div>
       </div>
       </div>
 
@@ -77,9 +95,14 @@ const Contents = styled(
     padding: 3em 0 4em;
     border-radius: 20px;
     .list {
-      text-align: center;
+      text-align: left;
       p {
+        text-align: center;
         margin-bottom: 1em;
+      }
+      div {
+        margin-left: calc(47% - 8em );
+        margin-bottom: 3px;
       }
     }
     .pdf-text {
