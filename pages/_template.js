@@ -31,6 +31,7 @@ const Ribbon = styled(
     </div>
   )`
     position: fixed;
+    z-index: 100;
     top: 20px;
     right: -85px;
     display: inline-block;
