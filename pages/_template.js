@@ -2,15 +2,14 @@ import React from 'react'
 import access from 'safe-access'
 import include from 'underscore.string/include'
 import { Link as _Link } from 'react-router'
-// import { Container } from 'react-responsive-grid'
 import { prefixLink } from 'gatsby-helpers'
 import { rhythm, scale } from 'utils/typography'
 import { config } from 'config'
-import styled from 'styled-components';
+import styled from 'styled-components'
+import _Ribbon from '../components/Ribbon'
 import IHome from 'react-icons/lib/ti/home'
 import _ICode from 'react-icons/lib/io/code'
 import IPicture from 'react-icons/lib/io/android-color-palette'
-// import IAbout from 'react-icons/lib/io/android-person'
 import _IAbout from './AboutIcon'
 import './styles.scss'
 
@@ -23,6 +22,22 @@ const Container = (props) =>
   >
     {props.children}
   </div>
+
+
+const Ribbon = styled(
+  (p) =>
+    <div {...p}>
+      <_Ribbon href='/cv/' />
+    </div>
+  )`
+    position: fixed;
+    top: 20px;
+    right: -85px;
+    display: inline-block;
+    transform: rotate(40deg);
+    -webkit-backface-visibility: hidden;
+
+  `
 
 const ICode = () =>
   <_ICode style={{position: 'relative', left: 1.5}} />
@@ -95,13 +110,13 @@ class Template extends React.Component {
             </Link>
           </I>
         </div>
-
       </div>
 
     return (
       include(access(this, 'props.location.pathname'), '/cv/')
       ? <div>{children}</div>
       : <Container>
+          <Ribbon />
           {header}
           <div className='main'>
             {children}
