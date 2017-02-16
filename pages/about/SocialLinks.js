@@ -56,12 +56,6 @@ const SocialLinks = () =>
     </S>
 
     <S>
-      <a title="facebook.com/daniel.reszka.58" href="https://www.facebook.com/daniel.reszka.58" target="_blank" rel="external">
-        <FaFacebook />
-      </a>
-    </S>
-
-    <S>
       <a title="linkedin.com/in/danielres" href="https://be.linkedin.com/in/danielres" target="_blank" rel="external">
         <FaLinkedin />
       </a>
@@ -74,10 +68,18 @@ const SocialLinks = () =>
     </S>
 
     <S>
-      <a title="about.me/daniel.r" href="https://about.me/daniel.r" target="_blank" rel="external">
-        <MdInfo />
+      <a title="facebook.com/daniel.reszka.58" href="https://www.facebook.com/daniel.reszka.58" target="_blank" rel="external">
+        <FaFacebook />
       </a>
     </S>
+
+    {false &&
+      <S>
+        <a title="about.me/daniel.r" href="https://about.me/daniel.r" target="_blank" rel="external">
+          <MdInfo />
+        </a>
+      </S>
+    }
   </div>
 
 
