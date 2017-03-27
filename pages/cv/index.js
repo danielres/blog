@@ -76,7 +76,7 @@ const Contents = styled(
         <div>
           <CvLink />
           <small className='mute'>
-            ({moment('2017-02-15').format('MMM D, YYYY')})
+            ({moment('2017-03-27').format('MMM D, YYYY')})
           </small>
         </div>
         <hr />
