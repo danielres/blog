@@ -6,7 +6,7 @@ import Footer from 'components/Footer'
 import _Envelope from 'react-icons/lib/fa/envelope'
 import _Check from 'react-icons/lib/fa/check'
 import PageTitle from 'components/PageTitle'
-import SocialLinks from './SocialLinks'
+import SocialLinks from '../shared/SocialLinks'
 
 
 const I = styled.span`
