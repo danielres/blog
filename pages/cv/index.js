@@ -35,7 +35,7 @@ const I = styled((p) => <div {...p} />)`
 
 const PageTitle = styled((p) => (
 	<h2 className={p.className}>
-		Daniel Reszka, 37
+		Daniel Reszka, 38
 		<div>
 			<small>
 				Full-stack developer <br />
@@ -75,7 +75,7 @@ const Contents = styled((p) => (
 			<p className="mini-title">My CV</p>
 			<div>
 				<CvLink />
-				<small className="mute">(Updated: {moment('2017-07-20').format('MMM D, YYYY')})</small>
+				<small className="mute">(Updated: {moment('2017-11-03').format('MMM D, YYYY')})</small>
 			</div>
 		</div>
 
