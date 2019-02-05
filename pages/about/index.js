@@ -97,12 +97,13 @@ class Page extends React.Component {
           <div
             style={{ paddingLeft: 40, margin: '10px 0'}}
           >
-            <C /> <Link className='text-link' to={prefixLink('/dev/')}>Full-stack developer</Link> <small style={{color: 'gray'}}> (React / NodeJS / RoR)</small><br />
+            <C /> Highly experienced <Link className='text-link' to={prefixLink('/dev/')}>full-stack developer</Link> <small style={{color: 'gray'}}> (React / NodeJS)</small><br />
             <C /> <Link className='text-link' to={prefixLink('/gallery/')}>Digital artist</Link> <br />
+            <C /> <Link className='text-link' to='https://soundcloud.com/tales-from-within/sets/tales-from-within'>Electronic musician</Link> <br />
             <C /> Freelancer<br />
             <C /> Minimalist<br />
             <C /> NLP master practitioner<br />
-            <C /> Coach for IT teams and <br />project leaders
+            <C /> Mentor / coach for IT teams and <br />project leaders
           </div>
 
           <p>living in Berlin, Germany</p>
