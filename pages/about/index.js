@@ -88,6 +88,8 @@ class Page extends React.Component {
       <div>
         <PageTitle>About</PageTitle>
 
+        <p className="text-center"><Link className='text-link' to={prefixLink('/cv/')}>Looking for my CV?</Link></p>
+
         <Portrait />
 
         <BorderLeft>
