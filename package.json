@@ -8,12 +8,12 @@
   },
   "dependencies": {
     "cheerio": "^0.22.0",
-    "gatsby": "^0.12.6",
+    "gatsby": "^2.0.0",
     "image-size": "^0.5.0",
-    "lodash": "^4.15.0",
+    "lodash": "^4.17.11",
     "mkdirp": "^0.5.1",
-    "moment": "^2.14.1",
-    "node-sass": "^3.11.1",
+    "moment": "^2.19.3",
+    "node-sass": "^3.13.1",
     "react-disqus-thread": "^0.4.0",
     "react-ga": "^2.1.2",
     "react-helmet": "^3.1.0",
@@ -28,7 +28,7 @@
     "sync-request": "^3.0.1",
     "typography": "^0.14.0",
     "typography-theme-wordpress-2016": "^0.14.0",
-    "underscore.string": "^3.2.3"
+    "underscore.string": "^3.3.5"
   },
   "devDependencies": {},
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
