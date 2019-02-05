@@ -42,8 +42,6 @@ const Portrait = styled((p) => <div className={p.className}><img width={150} hei
     margin-top: 0;
     border-radius: 100%;
     padding: 0;
-    border: 2px solid #ccc;
-    background: #ccc;
   }
 `
 
