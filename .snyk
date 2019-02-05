@@ -1,0 +1,34 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.3
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - node-sass > node-gyp > path-array > array-index > debug:
+        patched: '2019-02-05T14:45:33.243Z'
+    - gatsby > node-sass > node-gyp > path-array > array-index > debug:
+        patched: '2019-02-05T14:45:33.243Z'
+  'npm:hoek:20180212':
+    - gatsby > hapi > subtext > content > hoek:
+        patched: '2019-02-05T14:45:33.243Z'
+    - gatsby > hapi > subtext > pez > content > hoek:
+        patched: '2019-02-05T14:45:33.243Z'
+    - gatsby > postcss-import > pkg-resolve > jspm > request > hawk > hoek:
+        patched: '2019-02-05T14:45:33.243Z'
+    - gatsby > postcss-import > pkg-resolve > jspm > request > hawk > boom > hoek:
+        patched: '2019-02-05T14:45:33.243Z'
+    - gatsby > postcss-import > pkg-resolve > jspm > request > hawk > sntp > hoek:
+        patched: '2019-02-05T14:45:33.243Z'
+    - gatsby > postcss-import > pkg-resolve > jspm > request > hawk > cryptiles > boom > hoek:
+        patched: '2019-02-05T14:45:33.243Z'
+  'npm:lodash:20180130':
+    - gatsby > webpack-configurator > lodash:
+        patched: '2019-02-05T14:45:33.243Z'
+  'npm:ms:20170412':
+    - node-sass > node-gyp > path-array > array-index > debug > ms:
+        patched: '2019-02-05T14:45:33.243Z'
+    - gatsby > node-sass > node-gyp > path-array > array-index > debug > ms:
+        patched: '2019-02-05T14:45:33.243Z'
+  'npm:tunnel-agent:20170305':
+    - gatsby > postcss-import > pkg-resolve > jspm > request > tunnel-agent:
+        patched: '2019-02-05T14:45:33.243Z'
