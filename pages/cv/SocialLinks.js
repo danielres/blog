@@ -4,8 +4,8 @@ import FaGithub from 'react-icons/lib/fa/github'
 import FaFacebook from 'react-icons/lib/fa/facebook'
 import FaTwitter from 'react-icons/lib/fa/twitter'
 import FaLinkedin from 'react-icons/lib/fa/linkedin'
-import FaSoundcould from 'react-icons/lib/fa/soundcloud'
 import FaFlickr from 'react-icons/lib/fa/flickr'
+import FaSoundcould from 'react-icons/lib/fa/soundcloud'
 import MdInfo from 'react-icons/lib/md/info'
 
 const S = styled.span`
@@ -14,14 +14,11 @@ const S = styled.span`
   color: #f6f6f6;
   background: #999;
   border-radius: 20%;
-  padding: 5px 10px 8px;
+  padding: 0px 10px 3px;
   line-height: 45px;
-  width: 60px;
-  margin-right: 15px;
-  &:last-child {
-    margin-right: 0;
-  };
-  font-size: 40px;
+  width: 50px;
+  margin-right: 10px;
+  font-size: 30px;
   transition-duration: 0.4s;
     &:hover {
       background: #5790C4;
@@ -55,6 +52,12 @@ const SocialLinks = () =>
     </S>
 
     <S>
+      <a title="facebook.com/daniel.reszka.58" href="https://www.facebook.com/daniel.reszka.58" target="_blank" rel="external">
+        <FaFacebook />
+      </a>
+    </S>
+
+    <S>
       <a title="linkedin.com/in/danielres" href="https://be.linkedin.com/in/danielres" target="_blank" rel="external">
         <FaLinkedin />
       </a>
@@ -69,12 +72,6 @@ const SocialLinks = () =>
     <S>
       <a title="soundcloud.com/tales-from-within" href="https://soundcloud.com/tales-from-within/sets/tales-from-within" target="_blank" rel="external">
         <FaSoundcould />
-      </a>
-    </S>
-
-    <S>
-      <a title="facebook.com/daniel.reszka.58" href="https://www.facebook.com/daniel.reszka.58" target="_blank" rel="external">
-        <FaFacebook />
       </a>
     </S>
 
