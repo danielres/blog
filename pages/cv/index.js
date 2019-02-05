@@ -35,10 +35,10 @@ const I = styled((p) => <div {...p} />)`
 
 const PageTitle = styled((p) => (
 	<h2 className={p.className}>
-		Daniel Reszka, 38
+		Daniel Reszka, 39
 		<div>
 			<small>
-				Full-stack developer <br />
+				Full-stack web developer <br />
 				<small>(RoR+React/Redux/nodeJS)</small>
 			</small>
 		</div>
@@ -59,10 +59,11 @@ const PageTitle = styled((p) => (
 
 const Intro = () => (
 	<div style={{ fontWeight: 'normal', textAlign: 'center', lineHeight: 1.4 }}>
-		<div>
+		<p>
 			<div>I build APIs, responsive websites and web apps</div>
-			<div>I'm fluent in React + Redux + Rails</div>
-		</div>
+			<div>I am highly experienced in React, Redux, NodeJS</div>
+		</p>
+		<p>I also mentor &amp; coach IT teams and project leaders</p>
 	</div>
 )
 
